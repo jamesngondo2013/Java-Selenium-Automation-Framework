@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33" started-at="2019-11-25T19:01:27Z" finished-at="2019-11-25T19:01:27Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="33" started-at="2019-11-25T19:01:27Z" finished-at="2019-11-25T19:01:27Z">
+      <class name="com.james.training.selenium_project.AppTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.james.training.selenium_project.AppTest@1936f0f5]" name="openBrowser" duration-ms="1" started-at="2019-11-25T19:01:27Z" finished-at="2019-11-25T19:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openBrowser2()[pri:0, instance:com.james.training.selenium_project.AppTest@1936f0f5]" name="openBrowser2" duration-ms="0" started-at="2019-11-25T19:01:27Z" finished-at="2019-11-25T19:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser2 -->
+      </class> <!-- com.james.training.selenium_project.AppTest -->
+      <class name="com.james.training.selenium_project.RestAPITest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.james.training.selenium_project.RestAPITest@47f6473]" name="openBrowser" duration-ms="5" started-at="2019-11-25T19:01:27Z" finished-at="2019-11-25T19:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openBrowser2()[pri:0, instance:com.james.training.selenium_project.RestAPITest@47f6473]" name="openBrowser2" duration-ms="0" started-at="2019-11-25T19:01:27Z" finished-at="2019-11-25T19:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser2 -->
+      </class> <!-- com.james.training.selenium_project.RestAPITest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
