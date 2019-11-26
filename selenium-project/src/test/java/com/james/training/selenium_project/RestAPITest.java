@@ -14,6 +14,12 @@ public class RestAPITest {
 		@Test
 		public void openBrowser2() {
 			
-			System.out.println("Other opening....");
+			System.out.println("Chrome opening....");
+		}
+		
+		@Test
+		public void openBrowser3() {
+			
+			System.out.println("Firefox opening....");
 		}
 }
