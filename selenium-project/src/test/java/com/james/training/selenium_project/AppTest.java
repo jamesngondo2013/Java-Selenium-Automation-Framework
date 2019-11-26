@@ -19,4 +19,10 @@ public class AppTest
 		
 		System.out.println("Firefox opening....");
 	}
+	
+	@Test
+	public void openBrowser3() {
+		
+		System.out.println("Safari opening....");
+	}
 }
