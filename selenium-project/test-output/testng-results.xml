@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-07T16:33:17Z" name="PositiveLogInTestSuite" finished-at="2019-12-07T16:33:34Z" duration-ms="17192">
+  <suite started-at="2019-12-07T18:45:48Z" name="LogInTestSuite" finished-at="2019-12-07T18:46:58Z" duration-ms="69279">
     <groups>
     </groups>
-    <test started-at="2019-12-07T16:33:17Z" name="positivelogInTest" finished-at="2019-12-07T16:33:34Z" duration-ms="17192">
+    <test started-at="2019-12-07T18:45:48Z" name="positivelogInTest" finished-at="2019-12-07T18:46:01Z" duration-ms="12379">
       <class name="com.james.training.selenium_project.loginpagetests.PositiveLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.loginpagetests.PositiveLoginTest@38e79ae3]" started-at="2019-12-07T16:33:17Z" name="setUp" finished-at="2019-12-07T16:33:25Z" duration-ms="7620" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.loginpagetests.PositiveLoginTest@291b4bf5]" started-at="2019-12-07T18:45:48Z" name="setUp" finished-at="2019-12-07T18:45:56Z" duration-ms="7643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,194 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@19868320]]>
+                <![CDATA[org.testng.TestRunner@6759f091]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="positivelogInTest()[pri:0, instance:com.james.training.selenium_project.loginpagetests.PositiveLoginTest@38e79ae3]" started-at="2019-12-07T16:33:25Z" name="positivelogInTest" finished-at="2019-12-07T16:33:33Z" duration-ms="8487" status="PASS">
+        <test-method signature="positivelogInTest()[pri:0, instance:com.james.training.selenium_project.loginpagetests.PositiveLoginTest@291b4bf5]" started-at="2019-12-07T18:45:56Z" name="positivelogInTest" finished-at="2019-12-07T18:45:59Z" duration-ms="3476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.loginpagetests.PositiveLoginTest@38e79ae3]" started-at="2019-12-07T16:33:33Z" name="tearDown" finished-at="2019-12-07T16:33:34Z" duration-ms="1062" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.loginpagetests.PositiveLoginTest@291b4bf5]" started-at="2019-12-07T18:45:59Z" name="tearDown" finished-at="2019-12-07T18:46:01Z" duration-ms="1224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.james.training.selenium_project.loginpagetests.PositiveLoginTest -->
     </test> <!-- positivelogInTest -->
-  </suite> <!-- PositiveLogInTestSuite -->
+    <test started-at="2019-12-07T18:46:01Z" name="negativeUsernameTest" finished-at="2019-12-07T18:46:30Z" duration-ms="29269">
+      <class name="com.james.training.selenium_project.loginpagetests.NegativeLoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@7748410a]" started-at="2019-12-07T18:46:01Z" name="setUp" finished-at="2019-12-07T18:46:10Z" duration-ms="9587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@33a053d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeUsernameTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@7748410a]" started-at="2019-12-07T18:46:10Z" name="negativeUsernameTest" finished-at="2019-12-07T18:46:14Z" duration-ms="3379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeUsernameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@7748410a]" started-at="2019-12-07T18:46:14Z" name="tearDown" finished-at="2019-12-07T18:46:16Z" duration-ms="2162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@7748410a]" started-at="2019-12-07T18:46:16Z" name="setUp" finished-at="2019-12-07T18:46:24Z" duration-ms="8305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@33a053d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeUsernameTest_FF(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@7748410a]" started-at="2019-12-07T18:46:24Z" name="negativeUsernameTest_FF" finished-at="2019-12-07T18:46:28Z" duration-ms="3496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeUsernameTest_FF -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@7748410a]" started-at="2019-12-07T18:46:28Z" name="tearDown" finished-at="2019-12-07T18:46:30Z" duration-ms="2334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.james.training.selenium_project.loginpagetests.NegativeLoginTests -->
+    </test> <!-- negativeUsernameTest -->
+    <test started-at="2019-12-07T18:46:30Z" name="negativeUsernameTest_FF" finished-at="2019-12-07T18:46:58Z" duration-ms="27525">
+      <class name="com.james.training.selenium_project.loginpagetests.NegativeLoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@65b3f4a4]" started-at="2019-12-07T18:46:30Z" name="setUp" finished-at="2019-12-07T18:46:38Z" duration-ms="8315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@14a54ef6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeUsernameTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@65b3f4a4]" started-at="2019-12-07T18:46:38Z" name="negativeUsernameTest" finished-at="2019-12-07T18:46:41Z" duration-ms="3107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeUsernameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@65b3f4a4]" started-at="2019-12-07T18:46:41Z" name="tearDown" finished-at="2019-12-07T18:46:44Z" duration-ms="2153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@65b3f4a4]" started-at="2019-12-07T18:46:44Z" name="setUp" finished-at="2019-12-07T18:46:52Z" duration-ms="8406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@14a54ef6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeUsernameTest_FF(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@65b3f4a4]" started-at="2019-12-07T18:46:52Z" name="negativeUsernameTest_FF" finished-at="2019-12-07T18:46:55Z" duration-ms="3293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeUsernameTest_FF -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.loginpagetests.NegativeLoginTests@65b3f4a4]" started-at="2019-12-07T18:46:55Z" name="tearDown" finished-at="2019-12-07T18:46:58Z" duration-ms="2245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.james.training.selenium_project.loginpagetests.NegativeLoginTests -->
+    </test> <!-- negativeUsernameTest_FF -->
+  </suite> <!-- LogInTestSuite -->
 </testng-results>
