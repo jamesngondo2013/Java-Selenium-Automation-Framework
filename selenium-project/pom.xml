@@ -20,7 +20,7 @@
 	<profiles>
 		<profile>
 			<id>regression</id>
-
+			
 			<!-- allows to execute all test cases in a maven project -->
 			<build>
 				<pluginManagement>
@@ -31,7 +31,7 @@
 							<version>3.0.0-M4</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>testng.xml</suiteXmlFile>
+									<suiteXmlFile>PositiveLoginTestSuite.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -40,7 +40,6 @@
 			</build>
 		</profile>
 	</profiles>
-
 
 	<dependencies>
 		<dependency>

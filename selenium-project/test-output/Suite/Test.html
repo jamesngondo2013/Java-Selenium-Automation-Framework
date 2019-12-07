@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 25 18:18:28 GMT 2019</td>
+<td>Started on:</td><td>Thu Dec 05 19:28:54 GMT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (39 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (23 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,33 +67,49 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.james.training.selenium_project.RestAPITest.openBrowser()'><b>openBrowser</b><br>Test class: com.james.training.selenium_project.RestAPITest</td>
-<td></td>
+<td title='com.james.training.selenium_project.NegativeLoginTests.negativeTest()'><b>negativeTest</b><br>Test class: com.james.training.selenium_project.NegativeLoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method negativeTest but has not been marked @Optional or defined
+in C:\Users\i350380\Documents\GitHub\Java-Selenium-Automation-Framework\selenium-project\src\test\java\resources\testng.xml
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777379084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777379084'><pre>org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method negativeTest but has not been marked @Optional or defined
+in C:\Users\i350380\Documents\GitHub\Java-Selenium-Automation-Framework\selenium-project\src\test\java\resources\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>com.james.training.selenium_project.RestAPITest@192c3f1e</td></tr>
-<tr>
-<td title='com.james.training.selenium_project.AppTest.openBrowser()'><b>openBrowser</b><br>Test class: com.james.training.selenium_project.AppTest</td>
-<td></td>
-<td>0</td>
-<td>com.james.training.selenium_project.AppTest@2e377400</td></tr>
-<tr>
-<td title='com.james.training.selenium_project.RestAPITest.openBrowser2()'><b>openBrowser2</b><br>Test class: com.james.training.selenium_project.RestAPITest</td>
-<td></td>
-<td>0</td>
-<td>com.james.training.selenium_project.RestAPITest@192c3f1e</td></tr>
-<tr>
-<td title='com.james.training.selenium_project.AppTest.openBrowser2()'><b>openBrowser2</b><br>Test class: com.james.training.selenium_project.AppTest</td>
-<td></td>
-<td>0</td>
-<td>com.james.training.selenium_project.AppTest@2e377400</td></tr>
+<td>com.james.training.selenium_project.NegativeLoginTests@38e79ae3</td></tr>
 </table><p>
 </body>
 </html>

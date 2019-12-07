@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [NegativeLogInTestSuite]" guice-stage="DEVELOPMENT">
+  <test name="negativeUsernameTest_FF(failed)">
+    <parameter name="password" value="SuperSecretPassword!"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="expectedMessage" value="Your username is invalid!"/>
+    <parameter name="username" value="incorrectUsername"/>
+    <classes>
+      <class name="com.james.training.selenium_project.NegativeLoginTests">
+        <methods>
+          <include name="negativeUsernameTest"/>
+          <include name="negativeUsernameTest_FF"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.james.training.selenium_project.NegativeLoginTests -->
+    </classes>
+  </test> <!-- negativeUsernameTest_FF(failed) -->
+</suite> <!-- Failed suite [NegativeLogInTestSuite] -->
