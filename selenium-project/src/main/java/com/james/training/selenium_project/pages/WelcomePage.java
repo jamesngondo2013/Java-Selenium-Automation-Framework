@@ -15,6 +15,7 @@ public class WelcomePage extends BasePage {
 	private By dropdownLinkLocator = By.linkText("Dropdown");
 	private By multipleWindowsLinkLocator = By.linkText("Multiple Windows");
 	private By javaScriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
+	private By editorLinkLocator = By.linkText("WYSIWYG Editor");
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -57,6 +58,12 @@ public class WelcomePage extends BasePage {
 		log.info("Clicking JavaScript Alerts link on Welcome Page");
 		click(javaScriptAlertsLinkLocator);
 		return new JavaScriptAlertsPage(driver, log);
+	}
+
+	public TextEditoriFramePage clickWYSIWYGEditorLink() {
+		log.info("Clicking kWYSIWYG Editor link on Welcome Page");
+		click(editorLinkLocator);
+		return new TextEditoriFramePage(driver, log);
 	}
 
 }
