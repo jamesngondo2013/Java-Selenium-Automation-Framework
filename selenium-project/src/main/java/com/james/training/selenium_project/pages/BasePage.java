@@ -143,5 +143,22 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
+	
+	/** Perform scroll to the top of page */
+	public void scrollUpPage() {
+		log.info("Scrolling to the bottom of the page");
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("window.scrollTo(0,0)");
+	}
+	
+	/** Perform scroll to view specific element on page */
+	public void scrollToViewSpecificElementOnPage(By locator) {
+		log.info("Scrolling to view specific element on page");
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		
+		WebElement element = findElement(locator);
+		
+		jsExecutor.executeScript("arguments[0].scrollIntoView();", element);
+	}
 
 }
