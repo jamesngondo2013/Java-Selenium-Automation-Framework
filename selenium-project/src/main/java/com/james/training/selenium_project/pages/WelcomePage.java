@@ -9,10 +9,12 @@ public class WelcomePage extends BasePage {
 
 	private String pageUrl = "http://the-internet.herokuapp.com/";
 
+	//elements on the Welcome Page
 	private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
 	private By checkboxesLinkLocator = By.linkText("Checkboxes");
 	private By dropdownLinkLocator = By.linkText("Dropdown");
 	private By multipleWindowsLinkLocator = By.linkText("Multiple Windows");
+	private By javaScriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -51,6 +53,10 @@ public class WelcomePage extends BasePage {
 		return new MultipleWindowsPage(driver, log);
 	}
 
-
+	public JavaScriptAlertsPage clickJavaScriptAlertsLink() {
+		log.info("Clicking JavaScript Alerts link on Welcome Page");
+		click(javaScriptAlertsLinkLocator);
+		return new JavaScriptAlertsPage(driver, log);
+	}
 
 }
