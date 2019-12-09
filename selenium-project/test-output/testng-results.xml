@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-09T19:20:58Z" name="AlertsTestSuite" finished-at="2019-12-09T19:21:22Z" duration-ms="24529">
+  <suite started-at="2019-12-09T20:32:30Z" name="AlertsTestSuite" finished-at="2019-12-09T20:32:44Z" duration-ms="13960">
     <groups>
     </groups>
-    <test started-at="2019-12-09T19:20:58Z" name="AlertsTests" finished-at="2019-12-09T19:21:22Z" duration-ms="24529">
-      <class name="com.james.training.selenium_project.uielementspagetests.KeyPressesTests">
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.KeyPressesTests@291b4bf5]" started-at="2019-12-09T19:20:58Z" name="setUp" finished-at="2019-12-09T19:21:06Z" duration-ms="8685" status="PASS">
+    <test started-at="2019-12-09T20:32:30Z" name="AlertsTests" finished-at="2019-12-09T20:32:44Z" duration-ms="13960">
+      <class name="com.james.training.selenium_project.uielementspagetests.FileUploaderTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileUploaderTests@68e5eea7]" started-at="2019-12-09T20:32:30Z" name="setUp" finished-at="2019-12-09T20:32:37Z" duration-ms="7449" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,46 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3cec79d3]]>
+                <![CDATA[org.testng.TestRunner@5cbd159f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pressKeyTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.KeyPressesTests@291b4bf5]" started-at="2019-12-09T19:21:06Z" name="pressKeyTest" finished-at="2019-12-09T19:21:09Z" duration-ms="2717" status="PASS">
+        <test-method signature="fileUploaderTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileUploaderTests@68e5eea7]" started-at="2019-12-09T20:32:37Z" name="fileUploaderTest" finished-at="2019-12-09T20:32:43Z" duration-ms="5473" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pressKeyTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.KeyPressesTests@291b4bf5]" started-at="2019-12-09T19:21:09Z" name="tearDown" finished-at="2019-12-09T19:21:10Z" duration-ms="1255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.KeyPressesTests@291b4bf5]" started-at="2019-12-09T19:21:10Z" name="setUp" finished-at="2019-12-09T19:21:17Z" duration-ms="6844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@3cec79d3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="pressKeyWithActionsTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.KeyPressesTests@291b4bf5]" started-at="2019-12-09T19:21:17Z" name="pressKeyWithActionsTest" finished-at="2019-12-09T19:21:21Z" duration-ms="3786" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pressKeyWithActionsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.KeyPressesTests@291b4bf5]" started-at="2019-12-09T19:21:21Z" name="tearDown" finished-at="2019-12-09T19:21:22Z" duration-ms="1201" status="PASS">
+        </test-method> <!-- fileUploaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileUploaderTests@68e5eea7]" started-at="2019-12-09T20:32:43Z" name="tearDown" finished-at="2019-12-09T20:32:44Z" duration-ms="1016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.KeyPressesTests -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.FileUploaderTests -->
     </test> <!-- AlertsTests -->
   </suite> <!-- AlertsTestSuite -->
 </testng-results>
