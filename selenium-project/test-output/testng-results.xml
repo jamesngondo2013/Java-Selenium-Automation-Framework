@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-09T20:32:30Z" name="AlertsTestSuite" finished-at="2019-12-09T20:32:44Z" duration-ms="13960">
+  <suite started-at="2019-12-09T21:29:39Z" name="AlertsTestSuite" finished-at="2019-12-09T21:29:52Z" duration-ms="12653">
     <groups>
     </groups>
-    <test started-at="2019-12-09T20:32:30Z" name="AlertsTests" finished-at="2019-12-09T20:32:44Z" duration-ms="13960">
-      <class name="com.james.training.selenium_project.uielementspagetests.FileUploaderTests">
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileUploaderTests@68e5eea7]" started-at="2019-12-09T20:32:30Z" name="setUp" finished-at="2019-12-09T20:32:37Z" duration-ms="7449" status="PASS">
+    <test started-at="2019-12-09T21:29:39Z" name="AlertsTests" finished-at="2019-12-09T21:29:52Z" duration-ms="12653">
+      <class name="com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests@68e5eea7]" started-at="2019-12-09T21:29:39Z" name="setUp" finished-at="2019-12-09T21:29:47Z" duration-ms="7643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5cbd159f]]>
+                <![CDATA[org.testng.TestRunner@3c904f1e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="fileUploaderTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileUploaderTests@68e5eea7]" started-at="2019-12-09T20:32:37Z" name="fileUploaderTest" finished-at="2019-12-09T20:32:43Z" duration-ms="5473" status="PASS">
+        <test-method signature="textEditorIFrameTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests@68e5eea7]" started-at="2019-12-09T21:29:47Z" name="textEditorIFrameTest" finished-at="2019-12-09T21:29:51Z" duration-ms="3847" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileUploaderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileUploaderTests@68e5eea7]" started-at="2019-12-09T20:32:43Z" name="tearDown" finished-at="2019-12-09T20:32:44Z" duration-ms="1016" status="PASS">
+        </test-method> <!-- textEditorIFrameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests@68e5eea7]" started-at="2019-12-09T21:29:51Z" name="tearDown" finished-at="2019-12-09T21:29:52Z" duration-ms="1132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.FileUploaderTests -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests -->
     </test> <!-- AlertsTests -->
   </suite> <!-- AlertsTestSuite -->
 </testng-results>

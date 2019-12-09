@@ -16,6 +16,9 @@ public class TextEditoriFrameTests extends TestUtilities{
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
+		
+		//scroll to bottom of page
+		welcomePage.scrollToBottom();
 
 		// Click on WYSIWYG Editor link
 		TextEditoriFramePage editorPage = welcomePage.clickWYSIWYGEditorLink();
