@@ -17,6 +17,7 @@
 	</properties>
 
 	<profiles>
+	
 		<profile>
 			<id>regression</id>
 			<!-- allows to execute all test cases in a maven project -->
@@ -37,6 +38,7 @@
 				</pluginManagement>
 			</build>
 		</profile>
+		
 	</profiles>
 
 	<dependencies>

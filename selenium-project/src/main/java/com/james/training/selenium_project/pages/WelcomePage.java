@@ -12,6 +12,7 @@ public class WelcomePage extends BasePage {
 	private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
 	private By checkboxesLinkLocator = By.linkText("Checkboxes");
 	private By dropdownLinkLocator = By.linkText("Dropdown");
+	private By multipleWindowsLinkLocator = By.linkText("Multiple Windows");
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -43,6 +44,13 @@ public class WelcomePage extends BasePage {
 		click(dropdownLinkLocator);
 		return new DropdownPage(driver, log);
 	}
+	
+	public MultipleWindowsPage clickMultipleWindowsLink() {
+		log.info("Clicking Multiple Windows link on Welcome Page");
+		click(multipleWindowsLinkLocator);
+		return new MultipleWindowsPage(driver, log);
+	}
+
 
 
 }
