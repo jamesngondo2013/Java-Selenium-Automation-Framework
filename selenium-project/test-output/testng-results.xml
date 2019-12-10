@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-10T14:11:15Z" name="AlertsTestSuite" finished-at="2019-12-10T14:13:00Z" duration-ms="104733">
+  <suite started-at="2019-12-10T15:20:15Z" name="Default suite" finished-at="2019-12-10T15:21:09Z" duration-ms="53938">
     <groups>
     </groups>
-    <test started-at="2019-12-10T14:11:15Z" name="AlertsTests" finished-at="2019-12-10T14:13:00Z" duration-ms="104733">
-      <class name="com.james.training.selenium_project.uielementspagetests.HorizontalSliderTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.HorizontalSliderTest@2f54a33d]" started-at="2019-12-10T14:11:15Z" name="setUp" finished-at="2019-12-10T14:11:23Z" duration-ms="8177" status="PASS">
+    <test started-at="2019-12-10T15:20:15Z" name="Default test" finished-at="2019-12-10T15:21:09Z" duration-ms="53938">
+      <class name="com.james.training.selenium_project.uielementspagetests.FileDownloadTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileDownloadTest@2f54a33d]" started-at="2019-12-10T15:20:15Z" name="setUp" finished-at="2019-12-10T15:20:24Z" duration-ms="8533" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@327ed9f5]]>
+                <![CDATA[org.testng.TestRunner@554cd74a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sliderTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.HorizontalSliderTest@2f54a33d]" started-at="2019-12-10T14:11:23Z" name="sliderTest" finished-at="2019-12-10T14:12:59Z" duration-ms="95218" status="PASS">
+        <test-method signature="fileDownoladTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileDownloadTest@2f54a33d]" started-at="2019-12-10T15:20:24Z" name="fileDownoladTest" finished-at="2019-12-10T15:21:08Z" duration-ms="44140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sliderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.HorizontalSliderTest@2f54a33d]" started-at="2019-12-10T14:12:59Z" name="tearDown" finished-at="2019-12-10T14:13:00Z" duration-ms="1286" status="PASS">
+        </test-method> <!-- fileDownoladTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.FileDownloadTest@2f54a33d]" started-at="2019-12-10T15:21:08Z" name="tearDown" finished-at="2019-12-10T15:21:09Z" duration-ms="1227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.HorizontalSliderTest -->
-    </test> <!-- AlertsTests -->
-  </suite> <!-- AlertsTestSuite -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.FileDownloadTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
