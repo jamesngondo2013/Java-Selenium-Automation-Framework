@@ -19,6 +19,7 @@ public class WelcomePage extends BasePage {
 	private By keyPressesLocator = By.linkText("Key Presses");
 	private By fileUploaderLocator = By.linkText("File Upload");
 	private By dragAndDropLocator = By.linkText("Drag and Drop");
+	private By hoverOverLocator = By.linkText("Hovers");
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -85,6 +86,12 @@ public class WelcomePage extends BasePage {
 		log.info("Clicking Drag And Drop link on Welcome Page");
 		click(dragAndDropLocator);
 		return new DragAndDropPage(driver, log);
+	}
+	
+	public HoversPage clickHoversPageLink() {
+		log.info("Clicking Hover link on Welcome Page");
+		click(hoverOverLocator);
+		return new HoversPage(driver, log);
 	}
 
 }
