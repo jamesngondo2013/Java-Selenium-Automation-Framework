@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTestSuite" verbose="1">
+	
+	<test name="positivelogInTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest" />
+		</classes>
+		
+	</test>
+	
+	<test name="AlertsTests">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.AlertsTests" />
+		</classes>
+	</test>
+	
+	<test name="fileUploaderTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.FileUploaderTests" />
+		</classes>
+	</test>
+	
+</suite>

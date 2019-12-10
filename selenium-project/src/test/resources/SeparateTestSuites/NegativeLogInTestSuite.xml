@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NegativeLogInTestSuite" verbose="1" parallel="tests" thread-count="5">
+	
+	
+	<!-- <test name="negativeLogInTest">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedMessage" value="Your username is invalid!"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.james.training.selenium_project.loginpagetests.NegativeLoginTests" />
+		</classes>
+		
+	</test> -->
+	
+	<!-- using DataProvider = csv test data -->
+	<test name="negativeLogInTest">
+		<classes>
+			<class name="com.james.training.selenium_project.loginpagetests.NegativeLoginTests" />
+		</classes>
+		
+	</test>
+	
+	
+</suite>

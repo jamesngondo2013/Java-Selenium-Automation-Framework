@@ -11,7 +11,7 @@ import com.james.training.selenium_project.pages.WelcomePage;
 public class HoverOverTests extends TestUtilities {
 
 	@Test
-	public void user2ProfileTest() {
+	public void user2ProfileHoverOverTest() {
 		log.info("Starting user2ProfileTest");
 
 		// Open HoversPage

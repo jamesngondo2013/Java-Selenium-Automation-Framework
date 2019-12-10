@@ -30,7 +30,28 @@
 							<version>3.0.0-M4</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>C:/Users/i350380/Documents/GitHub/Java-Selenium-Automation-Framework/selenium-project/src/test/java/resources/TestSuites/separatedTestSuites/LogInTestSuite.xml</suiteXmlFile>
+									<suiteXmlFile>C:/Users/i350380/Documents/GitHub/Java-Selenium-Automation-Framework/selenium-project/src/test/resources/TestSuites/FullUITestSuite.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		
+		<profile>
+			<id>smoke</id>
+			<!-- allows to execute all test cases in a maven project -->
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0-M4</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>C:/Users/i350380/Documents/GitHub/Java-Selenium-Automation-Framework/selenium-project/src/test/resources/TestSuites/SmokeTestSuite.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -88,6 +109,14 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.12</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>3.3</version>
+		</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
 		<dependency>

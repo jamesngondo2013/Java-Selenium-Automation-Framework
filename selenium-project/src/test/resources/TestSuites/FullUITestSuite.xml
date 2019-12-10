@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="4">
+
+	<test name="positivelogInTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest" />
+		</classes>
+		
+	</test>
+
+	<!-- using DataProvider = csv test data -->
+	<test name="negativeLogInTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.NegativeLoginTests" />
+		</classes>
+		
+	</test>
+	
+	
+	<test name="selectingTwoCheckboxesTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.DropdownTest" />
+		</classes>
+	</test>
+	
+	<test name="AlertsTests">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.AlertsTests" />
+		</classes>
+	</test>
+	
+	
+	<test name="newWindowTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.MultipleWindowsTests" />
+		</classes>
+	</test>
+	
+	<test name="textEditorIFrameTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests" />
+		</classes>
+	</test>
+	
+	<test name="pressKeyTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.KeyPressesTests" />
+		</classes>
+	</test>
+	
+	<test name="fileUploaderTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.FileUploaderTests" />
+		</classes>
+	</test>
+	
+	<test name="dragBtoATest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.DragAndDropTests" />
+		</classes>
+	</test>
+	
+	<test name="dragAtoBTest">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.DragAndDropTests" />
+		</classes>
+	</test>
+
+</suite>

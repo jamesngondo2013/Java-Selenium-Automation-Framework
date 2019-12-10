@@ -18,6 +18,12 @@ public class DragAndDropPage extends BasePage{
 		log.info("Drag and drop A box on B box");
 		performDragAndDrop(columnA, columnB);
 	}
+	
+	/** Drag B box and drop it on A box */
+	public void dragBtoA() {
+		log.info("Drag and drop B box on A box");
+		performDragAndDrop(columnB, columnA);
+	}
 
 	/** Getting Column A Text */
 	public String getColumnAText() {

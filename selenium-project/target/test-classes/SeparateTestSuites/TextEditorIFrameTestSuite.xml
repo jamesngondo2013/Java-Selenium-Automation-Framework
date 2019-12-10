@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TextEditoriFrameTestsSuite" verbose="1">
+
+	<test name="textEditorIFrameTest">
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.TextEditoriFrameTests" />
+		</classes>
+	</test>
+
+</suite>
