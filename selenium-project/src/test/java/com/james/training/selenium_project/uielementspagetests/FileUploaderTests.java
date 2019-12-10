@@ -9,9 +9,9 @@ import com.james.training.selenium_project.pages.WelcomePage;
 
 public class FileUploaderTests extends TestUtilities{
 
-	@Test
-	public void fileUploaderTest() {
-		log.info("Starting fileUp loader Test");
+	@Test(dataProvider = "files")
+	public void fileUploaderTest(int no, String fileName) {
+		log.info("Starting fileUp loader Test #:"+ no + " for "+ fileName);
 		
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -20,9 +20,7 @@ public class FileUploaderTests extends TestUtilities{
 		// open fileUploader
 		FileUploaderPage fileUploaderPage = welcomePage.clickFileUploaderPageLink();
 		
-		// Select file
-		String filename = "nuig-data-analytics (1).pdf";
-		fileUploaderPage.selectFile(filename);
+		fileUploaderPage.selectFile(fileName);
 		
 		// Push upload button
 		fileUploaderPage.pushUploadButton();
@@ -31,8 +29,8 @@ public class FileUploaderTests extends TestUtilities{
 		String fileNames = fileUploaderPage.getUploadedFilesNames();
 
 		// Verify selected file uploaded
-		Assert.assertTrue(fileNames.contains(filename),
-						"Our file (" + filename + ") is not one of the uploaded (" + fileNames + ")");
+		Assert.assertTrue(fileNames.contains(fileName),
+						"Our file (" + fileName + ") is not one of the uploaded (" + fileName + ")");
 		
 	}
 }

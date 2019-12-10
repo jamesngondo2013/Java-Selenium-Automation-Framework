@@ -3,13 +3,13 @@
 <suite thread-count="-1" name="Failed suite [AlertsTestSuite]" guice-stage="DEVELOPMENT">
   <test name="AlertsTests(failed)">
     <classes>
-      <class name="com.james.training.selenium_project.uielementspagetests.HoverOverTests">
+      <class name="com.james.training.selenium_project.uielementspagetests.FileUploaderTests">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="user2ProfileTest"/>
+          <include name="fileUploaderTest"/>
         </methods>
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.HoverOverTests -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.FileUploaderTests -->
     </classes>
   </test> <!-- AlertsTests(failed) -->
 </suite> <!-- Failed suite [AlertsTestSuite] -->
