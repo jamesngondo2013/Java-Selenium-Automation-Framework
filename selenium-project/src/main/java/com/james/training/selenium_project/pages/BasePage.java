@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
@@ -52,6 +53,24 @@ public class BasePage {
 	protected void enter(String text, By locator) {
 		waitForVisibilityOf(locator, 5);
 		findElement(locator).sendKeys(text);
+	}
+	
+	public void selectDropdownByValue(By by, int value) {
+		WebElement dropdownElement = findElement(by);
+		Select dropdown = new Select(dropdownElement);
+		dropdown.selectByValue("" + value);
+	}
+	
+	public void selectDropdownByIndex(By by, int index) {
+		WebElement dropdownElement = findElement(by);
+		Select dropdown = new Select(dropdownElement);
+		dropdown.selectByIndex(index);
+	}
+	
+	public void selectDropdownByVisibleText(By by, String visibleText) {
+		WebElement dropdownElement = findElement(by);
+		Select dropdown = new Select(dropdownElement);
+		dropdown.selectByVisibleText(visibleText);
 	}
 
 	/** Get URL of current page from browser */

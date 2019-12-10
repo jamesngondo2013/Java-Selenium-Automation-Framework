@@ -12,24 +12,13 @@ public class DropdownPage extends BasePage{
 
 	public DropdownPage(WebDriver driver, Logger log) {
 		super(driver, log);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	/** This method selects given option from dropdown */
 	public void selectOption(int index) {
-		log.info("Selecting option " + index + " from dropdown");
-		WebElement dropdownElement = findElement(dropdown);
-		Select dropdown = new Select(dropdownElement);
-
-		// There are three ways to use Select class
-		// #1
-		// dropdown.selectByIndex(i);
-
-		// #2
-		dropdown.selectByValue("" + index);
-
-		// #3
-		// dropdown.selectByVisibleText("Option " + i);
+		log.info("Selecting option " + index + " from dropdown");	
+		selectDropdownByValue(dropdown, index);		
 	}
 
 	/** This method returns selected option in dropdown as a string */
