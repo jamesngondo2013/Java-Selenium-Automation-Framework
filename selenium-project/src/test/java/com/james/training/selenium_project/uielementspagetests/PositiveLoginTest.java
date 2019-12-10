@@ -1,8 +1,11 @@
 package com.james.training.selenium_project.uielementspagetests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.james.training.selenium_project.basetest.CsvDataProviders;
 import com.james.training.selenium_project.basetest.TestUtilities;
 import com.james.training.selenium_project.pages.LoginPage;
 import com.james.training.selenium_project.pages.SecureAreaPage;
@@ -13,9 +16,17 @@ import com.james.training.selenium_project.pages.WelcomePage;
  */
 public class PositiveLoginTest extends TestUtilities {
 	
-	@Test
-	public void positivelogInTest() {
-		System.out.println("Starting logIn test");
+	@Test(priority = 1, dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
+	public void positivelogInTest(Map<String, String> testData) {
+		
+		// data extraction
+		String no = testData.get("no");
+		String username = testData.get("username");
+		String password = testData.get("password");
+		String expectedSuccessMessage = testData.get("expectedSuccessMessage");
+		
+		
+		log.info("Starting Positive logIn test");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -25,7 +36,7 @@ public class PositiveLoginTest extends TestUtilities {
 		LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
 
 		// execute log in
-		SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
+		SecureAreaPage secureAreaPage = loginPage.logIn(username, password);
 
 		// Verifications
 		// New page url is expected
@@ -35,8 +46,8 @@ public class PositiveLoginTest extends TestUtilities {
 		Assert.assertTrue(secureAreaPage.isLogOutButtonVisible(), "LogOut Button is not visible.");
 
 		// Successful log in message
-		String expectedSuccessMessage = "You logged into a secure area!";
 		String actualSuccessMessage = secureAreaPage.getSuccessMessageText();
+		
 		Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
 				"actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "
 						+ expectedSuccessMessage + "\nactualSuccessMessage: " + actualSuccessMessage);

@@ -13,7 +13,7 @@ import com.james.training.selenium_project.pages.WelcomePage;
 
 public class NegativeLoginTests extends TestUtilities {
 
-	@Test(priority = 1, dataProvider="csvReader", dataProviderClass = CsvDataProviders.class)
+	@Test(priority = 1, dataProvider="csvNegativeTestReader", dataProviderClass = CsvDataProviders.class)
 	public void negativeLogInTest(Map<String, String> testData) {
 		
 		//data extraction
