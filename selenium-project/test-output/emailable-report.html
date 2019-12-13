@@ -8,13 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">AlertsTestSuite</th></tr>
-<tr><td><a href="#t0">jsAlertTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">37,392</td><td></td><td></td></tr>
+<tr><th colspan="7">JavaScriptErrorTestsSuite</th></tr>
+<tr><td><a href="#t0">jsErrorTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,904</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AlertsTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">jsAlertTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.james.training.selenium_project.uielementspagetests.AlertsTests</td><td><a href="#m0">jsAlertTest</a></td><td rowspan="1">1576235174964</td><td rowspan="1">4124</td></tr><tr class="passedeven"><td><a href="#m1">jsDismissTest</a></td><td rowspan="1">1576235186772</td><td rowspan="1">4388</td></tr><tr class="passedeven"><td><a href="#m2">jsPromptTest</a></td><td rowspan="1">1576235198705</td><td rowspan="1">5259</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">JavaScriptErrorTestsSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">jsErrorTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.james.training.selenium_project.uielementspagetests.JSErrorTests</td><td><a href="#m0">jsErrorTest</a></td><td rowspan="1">1576255791684</td><td rowspan="1">1517</td></tr></tbody>
 </table>
-<h2>jsAlertTest</h2><h3 id="m0">com.james.training.selenium_project.uielementspagetests.AlertsTests#jsAlertTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.james.training.selenium_project.uielementspagetests.AlertsTests#jsDismissTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.james.training.selenium_project.uielementspagetests.AlertsTests#jsPromptTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>jsErrorTest</h2><h3 id="m0">com.james.training.selenium_project.uielementspagetests.JSErrorTests#jsErrorTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Severe error: http://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found),
+	Severe error: http://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read property &apos;xyz&apos; of undefined
+	at com.james.training.selenium_project.uielementspagetests.JSErrorTests.jsErrorTest(JSErrorTests.java:36)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

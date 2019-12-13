@@ -22,6 +22,7 @@ public class WelcomePage extends BasePage {
 	private By hoverOverLocator = By.linkText("Hovers");
 	private By horizontalSliderLocator = By.linkText("Horizontal Slider");
 	private By fileDownloadLocator = By.linkText("File Download");
+	private By javaScriptOnloadError = By.linkText("JavaScript onload event error");
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -106,6 +107,12 @@ public class WelcomePage extends BasePage {
 		log.info("Clicking file download link on Welcome Page");
 		click(fileDownloadLocator);
 		return new FileDownloadPage(driver, log);
+	}
+	
+	public JSErrorPage clickJavaScriptOnloadEventErrorPage() {
+		log.info("Clicking JavaScript Onload Event Error link on Welcome Page");
+		click(javaScriptOnloadError);
+		return new JSErrorPage(driver, log);
 	}
 
 }
