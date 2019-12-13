@@ -2,6 +2,10 @@
 
 <suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="4">
 
+	<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
+	
 	<test name="positivelogInTest">
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest" />

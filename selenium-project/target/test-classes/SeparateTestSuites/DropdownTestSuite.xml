@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="CheckboxesTestSuite" verbose="1">
+	<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
 	
 	<test name="selectingTwoCheckboxesTest">
 		<classes>

@@ -11,12 +11,11 @@ public class AlertsTests extends TestUtilities{
 
 	@Test
 	public void jsAlertTest() {
-		log.info("Starting jsAlertTest");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
-		takeScreenshot("open main page");
+		//takeScreenshot("open main page");
 
 		// Click on JavaScript Alerts link
 		JavaScriptAlertsPage alertsPage = welcomePage.clickJavaScriptAlertsLink();
@@ -47,7 +46,6 @@ public class AlertsTests extends TestUtilities{
 
 	@Test
 	public void jsDismissTest() {
-		log.info("Starting jsDismissTest");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -82,7 +80,6 @@ public class AlertsTests extends TestUtilities{
 
 	@Test
 	public void jsPromptTest() {
-		log.info("Starting jsDismissTest");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

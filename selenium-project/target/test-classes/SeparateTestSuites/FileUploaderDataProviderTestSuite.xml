@@ -2,6 +2,10 @@
 
 <suite name="FileUploaderTests" verbose="1">
 
+<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
+	
 	<test name="fileUploaderTest">
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.FileUploaderTests" />

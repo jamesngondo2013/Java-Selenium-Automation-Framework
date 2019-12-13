@@ -1,7 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="DragAndDropTestsSiute" verbose="1">
-
+	<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
+	
 	<test name="dragAtoBTest">
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.DragAndDropTests" />

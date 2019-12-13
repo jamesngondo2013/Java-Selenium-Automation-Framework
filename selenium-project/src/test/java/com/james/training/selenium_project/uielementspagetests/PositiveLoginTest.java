@@ -25,8 +25,7 @@ public class PositiveLoginTest extends TestUtilities {
 		String password = testData.get("password");
 		String expectedSuccessMessage = testData.get("expectedSuccessMessage");
 		
-		
-		log.info("Starting Positive logIn test");
+		log.info("Starting negativeLogInTest #" + no + " for "+ username);
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

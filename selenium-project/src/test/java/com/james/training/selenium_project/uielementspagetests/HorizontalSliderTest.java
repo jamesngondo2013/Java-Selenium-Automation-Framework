@@ -11,7 +11,6 @@ public class HorizontalSliderTest extends TestUtilities{
 
 	@Test
 	public void sliderTest() {
-		log.info("Starting sliderTest");
 
 		// Open WelcomePage
 		WelcomePage welcomePage = new WelcomePage(driver, log);

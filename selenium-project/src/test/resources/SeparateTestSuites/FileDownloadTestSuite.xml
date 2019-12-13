@@ -2,6 +2,10 @@
 
 <suite name="FileDownloadTestSuite" verbose="1">
 
+	<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
+	
 	<test name="fileDownoladTest">
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.FileDownloadTest" />

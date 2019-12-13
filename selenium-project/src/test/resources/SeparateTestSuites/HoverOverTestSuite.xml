@@ -1,7 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="HoverOverTestsSuite" verbose="1">
-
+	<suite name="HoverOverTestsSuite" verbose="1">
+	<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
 	<test name="user2ProfileHoverOverTest">
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.HoverOverTests" />

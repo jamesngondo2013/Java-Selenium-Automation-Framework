@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="PositiveLogInTestSuite" verbose="1" parallel="tests" thread-count="5">
+	<listeners>
+		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+	</listeners>
 	
 	<test name="positivelogInTest">
 		<classes>

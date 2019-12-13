@@ -15,7 +15,7 @@ public class JSErrorTests extends TestUtilities{
 
 	@Test
 	public void jsErrorTest() {
-		log.info("Starting jsErrorTest");
+		
 		SoftAssert softAssert = new SoftAssert();
 
 		// Open Welcome page

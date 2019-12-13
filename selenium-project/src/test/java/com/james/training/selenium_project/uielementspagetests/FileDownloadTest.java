@@ -11,7 +11,6 @@ public class FileDownloadTest extends TestUtilities{
 
 	@Test
 	public void fileDownoladTest() {
-		log.info("Starting fileDownoladTest");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
