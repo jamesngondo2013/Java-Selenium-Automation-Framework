@@ -16,6 +16,7 @@ public class AlertsTests extends TestUtilities{
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
+		takeScreenshot("open main page");
 
 		// Click on JavaScript Alerts link
 		JavaScriptAlertsPage alertsPage = welcomePage.clickJavaScriptAlertsLink();
@@ -23,6 +24,7 @@ public class AlertsTests extends TestUtilities{
 		// Click JS Alert button
 		alertsPage.openJSAlert();
 		sleep(1000);
+		//takeScreenshot("Clicked JS Alert button");
 		
 		// Get alert text
 		String alertMessage = alertsPage.getAlertText();
@@ -50,6 +52,7 @@ public class AlertsTests extends TestUtilities{
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
+		takeScreenshot("open main page");
 
 		// Click on JavaScript Alerts link
 		JavaScriptAlertsPage alertsPage = welcomePage.clickJavaScriptAlertsLink();
@@ -57,6 +60,7 @@ public class AlertsTests extends TestUtilities{
 		// Click JS Confirm button
 		alertsPage.openJSConfirm();
 		sleep(1000);
+		//takeScreenshot("Open JS Alert Confirm");
 		// Get alert text
 		String alertMessage = alertsPage.getAlertText();
 
@@ -83,6 +87,7 @@ public class AlertsTests extends TestUtilities{
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
+		takeScreenshot("open main page");
 
 		// Click on JavaScript Alerts link
 		JavaScriptAlertsPage alertsPage = welcomePage.clickJavaScriptAlertsLink();
@@ -90,6 +95,8 @@ public class AlertsTests extends TestUtilities{
 		// Click JS Prompt button
 		alertsPage.openJSPrompt();
 		sleep(1000);
+		//takeScreenshot("Click JS Prompt button");
+		
 		// Get alert text
 		String alertMessage = alertsPage.getAlertText();
 

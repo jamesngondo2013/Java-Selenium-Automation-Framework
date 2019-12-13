@@ -1,5 +1,7 @@
 package com.james.training.selenium_project.basetest;
 
+import java.lang.reflect.Method;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -15,10 +17,14 @@ public class BaseTest {
 	protected WebDriver driver;
 	protected Logger log;
 	protected FirefoxProfile profile;
+	
+	protected String testSuiteName;
+	protected String testName;
+	protected String testMethodName;
 
 	@Parameters({ "browser" })
 	@BeforeMethod(alwaysRun = true)
-	public void setUp(@Optional("chrome") String browser, ITestContext ctx) {
+	public void setUp(Method method, @Optional("chrome") String browser, ITestContext ctx) {
 		String testName = ctx.getCurrentXmlTest().getName();
 		log = LogManager.getLogger(testName);
 		
@@ -37,6 +43,10 @@ public class BaseTest {
 		}
 		
 		driver.manage().window().maximize();
+		
+		this.testSuiteName = ctx.getSuite().getName();
+		this.testName = testName;
+		this.testMethodName = method.getName();
 	}
 
 	@AfterMethod(alwaysRun = true)

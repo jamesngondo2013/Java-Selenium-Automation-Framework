@@ -2,9 +2,10 @@
 
 <suite name="AlertsTestSuite" verbose="1">
 
-	<test name="AlertsTests">
+	<test name="jsAlertTest">
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.AlertsTests" />
+				
 		</classes>
 	</test>
 

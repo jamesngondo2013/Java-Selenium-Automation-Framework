@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AlertsTestSuite" class="navigator-link">
-              <span class="suite-name border-failed">AlertsTestSuite</span>
+              <span class="suite-name border-passed">AlertsTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-AlertsTestSuite" class="navigator-link ">
-                    <span>C:\Users\i350380\Documents\GitHub\Java-Selenium-Automation-Framework\selenium-project\src\test\resources\SeparateTestSuites\AlertsSoftAssertTestSuite.xml</span>
+                    <span>C:\Users\i350380\Documents\GitHub\Java-Selenium-Automation-Framework\selenium-project\src\test\resources\SeparateTestSuites\AlertsTestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-AlertsTestSuite" class="hide-methods failed suite-AlertsTestSuite"> (hide)</a> <!-- hide-methods failed suite-AlertsTestSuite -->
-                      <a href="#" panel-name="suite-AlertsTestSuite" class="show-methods failed suite-AlertsTestSuite"> (show)</a> <!-- show-methods failed suite-AlertsTestSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-AlertsTestSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AlertsTestSuite" title="com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests" class="method navigator-link" hash-for-method="jsAlertTest">jsAlertTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AlertsTestSuite" title="com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests" class="method navigator-link" hash-for-method="jsDismissTest">jsDismissTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-AlertsTestSuite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,7 +102,17 @@
                     <div class="method-list-content passed suite-AlertsTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AlertsTestSuite" title="com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests" class="method navigator-link" hash-for-method="jsPromptTest">jsPromptTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AlertsTestSuite" title="com.james.training.selenium_project.uielementspagetests.AlertsTests" class="method navigator-link" hash-for-method="jsAlertTest">jsAlertTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AlertsTestSuite" title="com.james.training.selenium_project.uielementspagetests.AlertsTests" class="method navigator-link" hash-for-method="jsDismissTest">jsDismissTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AlertsTestSuite" title="com.james.training.selenium_project.uielementspagetests.AlertsTests" class="method navigator-link" hash-for-method="jsPromptTest">jsPromptTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AlertsTestSuite -->
@@ -136,10 +127,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AlertsTestSuite" class="panel AlertsTestSuite">
-          <div class="suite-AlertsTestSuite-class-failed">
+          <div class="suite-AlertsTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.james.training.selenium_project.uielementspagetests.AlertsTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -147,14 +138,6 @@
                   <a name="jsAlertTest">
                   </a> <!-- jsAlertTest -->
                   <span class="method-name">jsAlertTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Alert message is not expected. 
-Should be &apos;I am a JS Alert&apos;, but it is &apos;I am a JS Alert[Fail]&apos; expected [true] but found [false],
-	result is not expected. 
-Should be &apos;You successfuly clicked an alert&apos;, but it is &apos;You successfuly clicked an alert[Fail]&apos; expected [true] but found [false]
-	at com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsAlertTest(AlertsSoftAssertsTests.java:52)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -162,24 +145,8 @@ Should be &apos;You successfuly clicked an alert&apos;, but it is &apos;You succ
                   <a name="jsDismissTest">
                   </a> <!-- jsDismissTest -->
                   <span class="method-name">jsDismissTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Alert message is not expected. 
-Should be &apos;I am a JS Confirm&apos;, but it is &apos;I am a JS Confirm[Fail]&apos; expected [true] but found [false],
-	result is not expected. 
-Should be &apos;You clicked: Cancel&apos;, but it is &apos;You clicked: Cancel[Fail]&apos; expected [true] but found [false]
-	at com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsDismissTest(AlertsSoftAssertsTests.java:88)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AlertsTestSuite-class-failed -->
-          <div class="suite-AlertsTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="jsPromptTest">
@@ -192,18 +159,18 @@ Should be &apos;You clicked: Cancel&apos;, but it is &apos;You clicked: Cancel[F
         </div> <!-- panel AlertsTestSuite -->
         <div panel-name="test-xml-AlertsTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\i350380\Documents\GitHub\Java-Selenium-Automation-Framework\selenium-project\src\test\resources\SeparateTestSuites\AlertsSoftAssertTestSuite.xml</span>
+            <span class="header-content">C:\Users\i350380\Documents\GitHub\Java-Selenium-Automation-Framework\selenium-project\src\test\resources\SeparateTestSuites\AlertsTestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;-1&quot; name=&quot;AlertsTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;AlertsTests&quot;&gt;
+  &lt;test name=&quot;jsAlertTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests&quot;/&gt;
+      &lt;class name=&quot;com.james.training.selenium_project.uielementspagetests.AlertsTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AlertsTests --&gt;
+  &lt;/test&gt; &lt;!-- jsAlertTest --&gt;
 &lt;/suite&gt; &lt;!-- AlertsTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,7 +182,7 @@ Should be &apos;You clicked: Cancel&apos;, but it is &apos;You clicked: Cancel[F
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AlertsTests (1 class)</span>
+                <span class="test-name">jsAlertTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,21 +211,21 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'jsPromptTest')
-data.setCell(0, 2, 'com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests')
-data.setCell(0, 3, 4555);
+data.setCell(0, 2, 'com.james.training.selenium_project.uielementspagetests.AlertsTests')
+data.setCell(0, 3, 5259);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'jsAlertTest')
-data.setCell(1, 2, 'com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests')
-data.setCell(1, 3, 3639);
+data.setCell(1, 1, 'jsDismissTest')
+data.setCell(1, 2, 'com.james.training.selenium_project.uielementspagetests.AlertsTests')
+data.setCell(1, 3, 4388);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'jsDismissTest')
-data.setCell(2, 2, 'com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests')
-data.setCell(2, 3, 3581);
+data.setCell(2, 1, 'jsAlertTest')
+data.setCell(2, 2, 'com.james.training.selenium_project.uielementspagetests.AlertsTests')
+data.setCell(2, 3, 4124);
 window.suiteTableData['AlertsTestSuite']= { tableData: data, tableDiv: 'times-div-AlertsTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-AlertsTestSuite">
               </div> <!-- times-div-AlertsTestSuite -->
             </div> <!-- times-div -->
@@ -284,46 +251,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.james.training.selenium_project.uielementspagetests.AlertsTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@7d0614f)</span>
+                <span class="method-name">setUp(public void com.james.training.selenium_project.uielementspagetests.AlertsTests.jsAlertTest(), chrom...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">jsAlertTest</span>
-                <span class="method-start">7710 ms</span>
+                <span class="method-start">7473 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11352 ms</span>
+                <span class="method-start">11599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@7d0614f)</span>
-                <span class="method-start">12652 ms</span>
+                <span class="method-name">setUp(public void com.james.training.selenium_project.uielementspagetests.AlertsTests.jsDismissTest(), chr...)</span>
+                <span class="method-start">12766 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">jsDismissTest</span>
-                <span class="method-start">19187 ms</span>
+                <span class="method-start">19281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22769 ms</span>
+                <span class="method-start">23674 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@7d0614f)</span>
-                <span class="method-start">23795 ms</span>
+                <span class="method-name">setUp(public void com.james.training.selenium_project.uielementspagetests.AlertsTests.jsPromptTest(), chro...)</span>
+                <span class="method-start">24728 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">jsPromptTest</span>
-                <span class="method-start">30270 ms</span>
+                <span class="method-start">31214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34827 ms</span>
+                <span class="method-start">36473 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
