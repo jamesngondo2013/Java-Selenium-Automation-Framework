@@ -9,12 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">AlertsTestSuite</th></tr>
-<tr><td><a href="#t0">jsAlertTestSuite</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">38,396</td><td></td><td></td></tr>
+<tr><td><a href="#t0">AlertsTests</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">36,215</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AlertsTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">jsAlertTestSuite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.james.training.selenium_project.uielementspagetests.AlertsTests</td><td><a href="#m0">jsAlertTest</a></td><td rowspan="1">1576258673378</td><td rowspan="1">4310</td></tr><tr class="passedeven"><td><a href="#m1">jsDismissTest</a></td><td rowspan="1">1576258685451</td><td rowspan="1">4273</td></tr><tr class="passedeven"><td><a href="#m2">jsPromptTest</a></td><td rowspan="1">1576258697412</td><td rowspan="1">5299</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AlertsTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AlertsTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests</td><td><a href="#m0">jsAlertTest</a></td><td rowspan="1">1576259308182</td><td rowspan="1">4000</td></tr><tr class="failedeven"><td><a href="#m1">jsDismissTest</a></td><td rowspan="1">1576259319589</td><td rowspan="1">3942</td></tr><tr><th colspan="4">AlertsTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests</td><td><a href="#m2">jsPromptTest</a></td><td rowspan="1">1576259330993</td><td rowspan="1">5054</td></tr></tbody>
 </table>
-<h2>jsAlertTestSuite</h2><h3 id="m0">com.james.training.selenium_project.uielementspagetests.AlertsTests#jsAlertTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.james.training.selenium_project.uielementspagetests.AlertsTests#jsDismissTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.james.training.selenium_project.uielementspagetests.AlertsTests#jsPromptTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AlertsTests</h2><h3 id="m0">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests#jsAlertTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Alert message is not expected. 
+Should be &apos;I am a JS Alert&apos;, but it is &apos;I am a JS Alert[Fail]&apos; expected [true] but found [false],
+	result is not expected. 
+Should be &apos;You successfuly clicked an alert&apos;, but it is &apos;You successfuly clicked an alert[Fail]&apos; expected [true] but found [false]
+	at com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsAlertTest(AlertsSoftAssertsTests.java:51)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests#jsDismissTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Alert message is not expected. 
+Should be &apos;I am a JS Confirm&apos;, but it is &apos;I am a JS Confirm[Fail]&apos; expected [true] but found [false],
+	result is not expected. 
+Should be &apos;You clicked: Cancel&apos;, but it is &apos;You clicked: Cancel[Fail]&apos; expected [true] but found [false]
+	at com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsDismissTest(AlertsSoftAssertsTests.java:86)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests#jsPromptTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

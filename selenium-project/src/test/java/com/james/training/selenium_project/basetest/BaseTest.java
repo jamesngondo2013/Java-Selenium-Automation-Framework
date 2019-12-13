@@ -9,9 +9,15 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+/*
+ * can add @Listeners to the base if we dont want to add it in test suite xml
+ */
 
+
+//@Listeners({com.james.training.selenium_project.basetest.TestListener.class})
 public class BaseTest {
 
 	protected WebDriver driver;

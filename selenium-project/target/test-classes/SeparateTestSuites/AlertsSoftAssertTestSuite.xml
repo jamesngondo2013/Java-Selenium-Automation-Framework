@@ -2,9 +2,9 @@
 
 <suite name="AlertsTestSuite" verbose="1">
 
-	<listeners>
+	<!-- <listeners>
 		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
-	</listeners>
+	</listeners> -->
 	
 	<test name="AlertsTests">
 		<classes>

@@ -3,13 +3,14 @@
 <suite thread-count="-1" name="Failed suite [AlertsTestSuite]" guice-stage="DEVELOPMENT">
   <test name="AlertsTests(failed)">
     <classes>
-      <class name="com.james.training.selenium_project.uielementspagetests.AlertsTests">
+      <class name="com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="jsAlertTest"/>
+          <include name="jsDismissTest"/>
         </methods>
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.AlertsTests -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests -->
     </classes>
   </test> <!-- AlertsTests(failed) -->
 </suite> <!-- Failed suite [AlertsTestSuite] -->

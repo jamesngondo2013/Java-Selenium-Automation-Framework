@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-13T17:37:45Z" name="AlertsTestSuite" finished-at="2019-12-13T17:38:23Z" duration-ms="38396">
+  <suite started-at="2019-12-13T17:48:20Z" name="AlertsTestSuite" finished-at="2019-12-13T17:48:57Z" duration-ms="36215">
     <groups>
     </groups>
-    <test started-at="2019-12-13T17:37:45Z" name="jsAlertTestSuite" finished-at="2019-12-13T17:38:23Z" duration-ms="38396">
-      <class name="com.james.training.selenium_project.uielementspagetests.AlertsTests">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:37:45Z" name="setUp" finished-at="2019-12-13T17:37:53Z" duration-ms="7550" status="PASS">
+    <test started-at="2019-12-13T17:48:20Z" name="AlertsTests" finished-at="2019-12-13T17:48:57Z" duration-ms="36215">
+      <class name="com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:21Z" name="setUp" finished-at="2019-12-13T17:48:28Z" duration-ms="6915" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.AlertsTests.jsAlertTest()]]>
+                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsAlertTest()]]>
               </value>
             </param>
             <param index="1">
@@ -21,26 +21,34 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@68c87fc3]]>
+                <![CDATA[org.testng.TestRunner@6eaa21d8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsAlertTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:37:53Z" name="jsAlertTest" finished-at="2019-12-13T17:37:57Z" duration-ms="4310" status="PASS">
+        <test-method signature="jsAlertTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:28Z" name="jsAlertTest" finished-at="2019-12-13T17:48:32Z" duration-ms="4000" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:Alert message is not expected. Should be 'I am a JS Alert', but it is 'I am a JS Alert[Fail]' expected [true] but found [false],result is not expected. Should be 'You successfuly clicked an alert', but it is 'You successfuly clicked an alert[Fail]' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:Alert message is not expected. Should be 'I am a JS Alert', but it is 'I am a JS Alert[Fail]' expected [true] but found [false],result is not expected. Should be 'You successfuly clicked an alert', but it is 'You successfuly clicked an alert[Fail]' expected [true] but found [false]at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)at com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsAlertTest(AlertsSoftAssertsTests.java:51)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:37:57Z" name="tearDown" finished-at="2019-12-13T17:37:58Z" duration-ms="1158" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:32Z" name="tearDown" finished-at="2019-12-13T17:48:33Z" duration-ms="882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:37:58Z" name="setUp" finished-at="2019-12-13T17:38:05Z" duration-ms="6602" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:33Z" name="setUp" finished-at="2019-12-13T17:48:39Z" duration-ms="6522" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.AlertsTests.jsDismissTest()]]>
+                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsDismissTest()]]>
               </value>
             </param>
             <param index="1">
@@ -50,26 +58,34 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@68c87fc3]]>
+                <![CDATA[org.testng.TestRunner@6eaa21d8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsDismissTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:38:05Z" name="jsDismissTest" finished-at="2019-12-13T17:38:09Z" duration-ms="4273" status="PASS">
+        <test-method signature="jsDismissTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:39Z" name="jsDismissTest" finished-at="2019-12-13T17:48:43Z" duration-ms="3942" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:Alert message is not expected. Should be 'I am a JS Confirm', but it is 'I am a JS Confirm[Fail]' expected [true] but found [false],result is not expected. Should be 'You clicked: Cancel', but it is 'You clicked: Cancel[Fail]' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:Alert message is not expected. Should be 'I am a JS Confirm', but it is 'I am a JS Confirm[Fail]' expected [true] but found [false],result is not expected. Should be 'You clicked: Cancel', but it is 'You clicked: Cancel[Fail]' expected [true] but found [false]at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)at com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsDismissTest(AlertsSoftAssertsTests.java:86)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:566)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsDismissTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:38:09Z" name="tearDown" finished-at="2019-12-13T17:38:10Z" duration-ms="1017" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:43Z" name="tearDown" finished-at="2019-12-13T17:48:44Z" duration-ms="953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:38:10Z" name="setUp" finished-at="2019-12-13T17:38:17Z" duration-ms="6667" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:44Z" name="setUp" finished-at="2019-12-13T17:48:50Z" duration-ms="6507" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.AlertsTests.jsPromptTest()]]>
+                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests.jsPromptTest()]]>
               </value>
             </param>
             <param index="1">
@@ -79,22 +95,22 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@68c87fc3]]>
+                <![CDATA[org.testng.TestRunner@6eaa21d8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsPromptTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:38:17Z" name="jsPromptTest" finished-at="2019-12-13T17:38:22Z" duration-ms="5299" status="PASS">
+        <test-method signature="jsPromptTest()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:50Z" name="jsPromptTest" finished-at="2019-12-13T17:48:56Z" duration-ms="5054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsPromptTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsTests@15ca7889]" started-at="2019-12-13T17:38:22Z" name="tearDown" finished-at="2019-12-13T17:38:23Z" duration-ms="999" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests@7a675056]" started-at="2019-12-13T17:48:56Z" name="tearDown" finished-at="2019-12-13T17:48:57Z" duration-ms="1031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.AlertsTests -->
-    </test> <!-- jsAlertTestSuite -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests -->
+    </test> <!-- AlertsTests -->
   </suite> <!-- AlertsTestSuite -->
 </testng-results>
