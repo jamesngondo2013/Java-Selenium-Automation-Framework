@@ -17,7 +17,7 @@
 	<!-- using DataProvider = csv test data -->
 	<test name="negativeLogInTest">
 		<classes>
-			<class name="com.james.training.selenium_project.loginpagetests.NegativeLoginTests" />
+			<class name="com.james.training.selenium_project.uielementspagetests.NegativeLoginTests" />
 		</classes>
 		
 	</test>

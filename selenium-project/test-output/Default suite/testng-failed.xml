@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" name="Failed suite [NegativeLogInTestSuite]" guice-stage="DEVELOPMENT">
-  <test name="negativeLogInTest(failed)">
+<suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.james.training.selenium_project.uielementspagetests.NegativeLoginTests">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- com.james.training.selenium_project.uielementspagetests.NegativeLoginTests -->
     </classes>
-  </test> <!-- negativeLogInTest(failed) -->
-</suite> <!-- Failed suite [NegativeLogInTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

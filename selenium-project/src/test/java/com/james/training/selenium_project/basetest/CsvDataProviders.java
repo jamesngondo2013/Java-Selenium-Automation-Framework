@@ -5,7 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -13,10 +17,12 @@ import java.util.Map;
 
 import org.testng.annotations.DataProvider;
 
+import com.james.training.selenium_project.basetest.db.DBConnectionDAO;
+import com.james.training.selenium_project.basetest.db.DatabaseConnectionManager;
 import com.opencsv.CSVReader;
 
 public class CsvDataProviders {
-
+	
 	@DataProvider(name = "csvNegativeTestReader")
 	public static Iterator<Object[]> csvNegativeTestReader(Method method) {
 		List<Object[]> list = new ArrayList<Object[]>();
@@ -61,9 +67,11 @@ public class CsvDataProviders {
 				String[] dataParts;
 				while ((dataParts = reader.readNext()) != null) {
 					Map<String, String> testData = new HashMap<String, String>();
+					
 					for (int i = 0; i < keys.length; i++) {
 						testData.put(keys[i], dataParts[i]);
 					}
+					
 					list.add(new Object[] { testData });
 				}
 			}
@@ -76,6 +84,5 @@ public class CsvDataProviders {
 
 		return list.iterator();
 	}
-
 
 }
