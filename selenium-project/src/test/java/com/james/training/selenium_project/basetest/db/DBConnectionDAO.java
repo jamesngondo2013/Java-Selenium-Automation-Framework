@@ -35,11 +35,11 @@ public class DBConnectionDAO {
 	public static void main(String[] args) {
 		DBConnectionDAO dao = DBConnectionDAO.getINSTANCE();
 		// dao.getData();
-		getData();
+		//getData();
 
 	}
 
-	public static List<TestDataDetails> getData() {
+	public static List<TestDataDetails> getTestDBData() {
 
 		DatabaseConnectionManager con = DatabaseConnectionManager.getConnectionManagerInstance();
 		con.connect();
@@ -59,7 +59,7 @@ public class DBConnectionDAO {
 				expected_message = rs.getString("expected_message");
 				description = rs.getString("description");
 
-				testData.add(new TestDataDetails(id, password, username, expected_message, description));
+				testData.add(new TestDataDetails(password, username));
 			}
 
 		} catch (SQLException e) {

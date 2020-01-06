@@ -45,13 +45,13 @@ public class BasePage {
 
 	/** Click on element with given locator when its visible */
 	protected void click(By locator) {
-		waitForVisibilityOf(locator, 5);
+		waitForVisibilityOf(locator, 360);
 		findElement(locator).click();
 	}
 
 	/** Type given text into element with given locator */
 	protected void enter(String text, By locator) {
-		waitForVisibilityOf(locator, 5);
+		waitForVisibilityOf(locator, 360);
 		findElement(locator).sendKeys(text);
 	}
 	
@@ -116,7 +116,7 @@ public class BasePage {
 	
 	/** Wait for alert present and then switch to it */
 	protected Alert switchToAlert() {
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.alertIsPresent());
 		return driver.switchTo().alert();
 	}

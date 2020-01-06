@@ -53,8 +53,8 @@ public class CsvDataProviders {
 		return list.iterator();
 	}
 	
-	@DataProvider(name = "csvPositiveTestReader", parallel=true)
-	public static Iterator<Object[]> csvPositiveTestReader(Method method) {
+	@DataProvider(name = "csvPositiveTestReader")
+	public Iterator<Object[]> csvPositiveTestReader(Method method) {
 		List<Object[]> list = new ArrayList<Object[]>();
 		String pathname = "src" + File.separator + "test" + File.separator + "resources" + File.separator
 				+ "dataproviders" + File.separator + method.getDeclaringClass().getSimpleName() + File.separator

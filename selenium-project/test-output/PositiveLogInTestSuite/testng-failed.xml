@@ -10,7 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="positivelogInTest"/>
+          <include name="positivelogInTest" invocation-numbers="0 1 3 4 2"/>
         </methods>
       </class> <!-- com.james.training.selenium_project.uielementspagetests.PositiveLoginTest -->
     </classes>

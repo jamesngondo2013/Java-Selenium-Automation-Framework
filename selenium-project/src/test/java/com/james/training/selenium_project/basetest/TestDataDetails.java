@@ -21,6 +21,11 @@ public class TestDataDetails {
 	public TestDataDetails() {
 		
 	}
+	
+	public TestDataDetails(String password, String username) {
+		this.password = password;
+		this.username = username;
+	}
 
 
 	public String getId() {

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.james.training.selenium_project.basetest.CsvDataProviders;
 import com.james.training.selenium_project.basetest.TestUtilities;
+import com.james.training.selenium_project.basetest.db.DBDataProvider;
 import com.james.training.selenium_project.pages.LoginPage;
 import com.james.training.selenium_project.pages.SecureAreaPage;
 import com.james.training.selenium_project.pages.WelcomePage;
@@ -27,20 +28,20 @@ public class PositiveLoginTest extends TestUtilities {
 		String password = testData.get("password");
 		String expectedSuccessMessage = testData.get("expectedSuccessMessage");
 		
-		log.info("Starting negativeLogInTest #" + no + " for "+ username);
+		log.info("Starting positiveLogInTest #" + no + " for "+ username);
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
-		takeScreenshot("Welcome page opened - by "+ username);
+		//takeScreenshot("Welcome page opened - by "+ username);
 
 		// Click on Form Authentication link
 		LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
-		takeScreenshot("click auth link - by "+ username);
+		//takeScreenshot("click auth link - by "+ username);
 		
 		// execute log in
 		SecureAreaPage secureAreaPage = loginPage.logIn(username, password);
-		takeScreenshot("logged in - by "+ username);
+		//takeScreenshot("logged in - by "+ username);
 
 		// Verifications
 		// New page url is expected
@@ -55,5 +56,40 @@ public class PositiveLoginTest extends TestUtilities {
 		Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
 				"actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "
 						+ expectedSuccessMessage + "\nactualSuccessMessage: " + actualSuccessMessage);
+	}
+	
+	//@Test(dataProvider="getData", dataProviderClass = DBDataProvider.class)
+	public void positivelogInDBTest(String username, String password) {
+		
+		// System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");	 
+		
+		log.info("Starting positiveLogInTest for "+ username);
+
+		// open main page
+		WelcomePage welcomePage = new WelcomePage(driver, log);
+		welcomePage.openPage();
+		//takeScreenshot("Welcome page opened - by "+ username);
+
+		// Click on Form Authentication link
+		LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
+		//takeScreenshot("click auth link - by "+ username);
+		
+		// execute log in
+		SecureAreaPage secureAreaPage = loginPage.logIn(username, password);
+		//takeScreenshot("logged in - by "+ username);
+
+		// Verifications
+		// New page url is expected
+		Assert.assertEquals(secureAreaPage.getCurrentUrl(), secureAreaPage.getPageUrl());
+
+		// log out button is visible
+		Assert.assertTrue(secureAreaPage.isLogOutButtonVisible(), "LogOut Button is not visible.");
+
+		// Successful log in message
+		String actualSuccessMessage = secureAreaPage.getSuccessMessageText();
+		
+		//Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
+		//		"actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "
+		//				+ expectedSuccessMessage + "\nactualSuccessMessage: " + actualSuccessMessage);
 	}
 }
