@@ -213,5 +213,22 @@ public class BasePage {
 		action.moveToElement(element).build().perform();
 	}
 
+	protected boolean isElementPresent(By by) {
+		try {
+			by.findElement(this.driver);
+			return true;
+		} catch (Exception var3) {
+			return false;
+		}
+	}
+	
+	protected void click(By by1, By by2) {
+		if (this.isElementPresent(by1)) {
+			this.click(by1);
+		} else {
+			this.click(by2);
+		}
+
+	}
 
 }

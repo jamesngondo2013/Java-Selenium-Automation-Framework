@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" name="Failed suite [AlertsTestSuite]" guice-stage="DEVELOPMENT">
-  <test name="AlertsTests(failed)">
+<suite thread-count="-1" data-provider-thread-count="20" name="Failed suite [PositiveLogInTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
+  </listeners>
+  <test name="positivelogInTest(failed)">
     <classes>
-      <class name="com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests">
+      <class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="jsAlertTest"/>
-          <include name="jsDismissTest"/>
+          <include name="positivelogInTest"/>
         </methods>
-      </class> <!-- com.james.training.selenium_project.uielementspagetests.AlertsSoftAssertsTests -->
+      </class> <!-- com.james.training.selenium_project.uielementspagetests.PositiveLoginTest -->
     </classes>
-  </test> <!-- AlertsTests(failed) -->
-</suite> <!-- Failed suite [AlertsTestSuite] -->
+  </test> <!-- positivelogInTest(failed) -->
+</suite> <!-- Failed suite [PositiveLogInTestSuite] -->

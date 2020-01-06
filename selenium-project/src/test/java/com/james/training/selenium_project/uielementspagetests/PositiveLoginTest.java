@@ -16,9 +16,11 @@ import com.james.training.selenium_project.pages.WelcomePage;
  */
 public class PositiveLoginTest extends TestUtilities {
 	
-	@Test(priority = 1, dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
+	@Test(dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
 	public void positivelogInTest(Map<String, String> testData) {
 		
+		// System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
+		 
 		// data extraction
 		String no = testData.get("no");
 		String username = testData.get("username");
@@ -34,9 +36,11 @@ public class PositiveLoginTest extends TestUtilities {
 
 		// Click on Form Authentication link
 		LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
-
+		takeScreenshot("click auth link - by "+ username);
+		
 		// execute log in
 		SecureAreaPage secureAreaPage = loginPage.logIn(username, password);
+		takeScreenshot("logged in - by "+ username);
 
 		// Verifications
 		// New page url is expected
