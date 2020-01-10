@@ -30,4 +30,9 @@ public class SecureAreaPage extends BasePage {
 		return findElement(message).getText();
 	}
 
+	public void clickLogout() {
+		click(By.xpath("//*[@class='icon-2x icon-signout']"));
+		log.info("clicked logout");
+	}
+
 }

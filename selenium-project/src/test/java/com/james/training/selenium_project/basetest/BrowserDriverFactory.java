@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserDriverFactory {
 
@@ -27,6 +28,10 @@ public class BrowserDriverFactory {
 		else if(browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
 			driver.set(new FirefoxDriver());
+		}
+		else if(browser.equals("IE")) {
+			System.setProperty("", "");
+			driver.set(new InternetExplorerDriver());
 		}
 		else {
 			System.out.println("Do not know how to start: " + browser + ", starting chrome.");

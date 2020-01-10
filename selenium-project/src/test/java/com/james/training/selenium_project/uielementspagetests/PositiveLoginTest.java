@@ -17,7 +17,7 @@ import com.james.training.selenium_project.pages.WelcomePage;
  */
 public class PositiveLoginTest extends TestUtilities {
 	
-	@Test(dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
+	//@Test(dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
 	public void positivelogInTest(Map<String, String> testData) {
 		
 		// System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
@@ -92,4 +92,20 @@ public class PositiveLoginTest extends TestUtilities {
 		//		"actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "
 		//				+ expectedSuccessMessage + "\nactualSuccessMessage: " + actualSuccessMessage);
 	}
+	
+	@Test
+	public void test2()
+	{
+		WelcomePage welcomePage = new WelcomePage(driver, log);
+		welcomePage.openPage();
+
+		// Click on Form Authentication link
+		LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
+		// takeScreenshot("click auth link - by "+ username);
+
+		// execute log in
+		SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
+		secureAreaPage.clickLogout();
+	}
+	
 }

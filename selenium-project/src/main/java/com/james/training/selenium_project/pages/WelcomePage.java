@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class WelcomePage extends BasePage {
 
 	private String pageUrl = "http://the-internet.herokuapp.com/";
+	private WebDriver driver;
 
 	//elements on the Welcome Page
 	private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
@@ -26,6 +27,7 @@ public class WelcomePage extends BasePage {
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
+		this.driver = driver;
 	}
 
 	/** Open WelcomePage with it's url */

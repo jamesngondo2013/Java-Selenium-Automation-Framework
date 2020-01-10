@@ -1,192 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-06T17:35:24Z" name="PositiveLogInTestSuite" finished-at="2020-01-06T17:36:19Z" duration-ms="55440">
+  <suite started-at="2020-01-08T18:47:59Z" name="PositiveLogInTestSuite" finished-at="2020-01-08T18:48:09Z" duration-ms="9981">
     <groups>
     </groups>
-    <test started-at="2020-01-06T17:35:24Z" name="positivelogInTest" finished-at="2020-01-06T17:36:19Z" duration-ms="55440">
+    <test started-at="2020-01-08T18:47:59Z" name="positivelogInTest" finished-at="2020-01-08T18:48:09Z" duration-ms="9981">
       <class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:24Z" name="setUp" finished-at="2020-01-06T17:35:31Z" duration-ms="6803" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@1ebd319f]" started-at="2020-01-08T18:48:00Z" name="setUp" finished-at="2020-01-08T18:48:06Z" duration-ms="6956" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.PositiveLoginTest.positivelogInTest(java.util.Map)]]>
+                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.PositiveLoginTest.test2()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2aeefcc]]>
+                <![CDATA[org.testng.TestRunner@252f626c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="positivelogInTest(java.util.Map)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:31Z" name="positivelogInTest" data-provider="csvPositiveTestReader" finished-at="2020-01-06T17:35:33Z" duration-ms="2388" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{no=1, password=SuperSecretPassword!, expectedSuccessMessage=You logged into a secure area!, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="test2()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@1ebd319f]" started-at="2020-01-08T18:48:06Z" name="test2" finished-at="2020-01-08T18:48:09Z" duration-ms="2571" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- positivelogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:33Z" name="tearDown" finished-at="2020-01-06T17:35:35Z" duration-ms="1504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:35Z" name="setUp" finished-at="2020-01-06T17:35:41Z" duration-ms="6724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.PositiveLoginTest.positivelogInTest(java.util.Map)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@2aeefcc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="positivelogInTest(java.util.Map)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:41Z" name="positivelogInTest" data-provider="csvPositiveTestReader" finished-at="2020-01-06T17:35:44Z" duration-ms="2464" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{no=2, password=SuperSecretPassword!, expectedSuccessMessage=You logged into a secure area!, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- positivelogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:44Z" name="tearDown" finished-at="2020-01-06T17:35:45Z" duration-ms="1526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:45Z" name="setUp" finished-at="2020-01-06T17:35:52Z" duration-ms="6726" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.PositiveLoginTest.positivelogInTest(java.util.Map)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@2aeefcc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="positivelogInTest(java.util.Map)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:52Z" name="positivelogInTest" data-provider="csvPositiveTestReader" finished-at="2020-01-06T17:35:55Z" duration-ms="2846" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{no=3, password=SuperSecretPassword!, expectedSuccessMessage=You logged into a secure area!, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- positivelogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:55Z" name="tearDown" finished-at="2020-01-06T17:35:57Z" duration-ms="1491" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:35:57Z" name="setUp" finished-at="2020-01-06T17:36:03Z" duration-ms="6695" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.PositiveLoginTest.positivelogInTest(java.util.Map)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@2aeefcc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="positivelogInTest(java.util.Map)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:36:03Z" name="positivelogInTest" data-provider="csvPositiveTestReader" finished-at="2020-01-06T17:36:06Z" duration-ms="2844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{no=4, password=SuperSecretPassword!, expectedSuccessMessage=You logged into a secure area!, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- positivelogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:36:06Z" name="tearDown" finished-at="2020-01-06T17:36:08Z" duration-ms="1509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:36:08Z" name="setUp" finished-at="2020-01-06T17:36:15Z" duration-ms="7218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.james.training.selenium_project.uielementspagetests.PositiveLoginTest.positivelogInTest(java.util.Map)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@2aeefcc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="positivelogInTest(java.util.Map)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:36:15Z" name="positivelogInTest" data-provider="csvPositiveTestReader" finished-at="2020-01-06T17:36:17Z" duration-ms="2684" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{no=5, password=SuperSecretPassword!, expectedSuccessMessage=You logged into a secure area!, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- positivelogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@15ca7889]" started-at="2020-01-06T17:36:17Z" name="tearDown" finished-at="2020-01-06T17:36:19Z" duration-ms="1606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- test2 -->
       </class> <!-- com.james.training.selenium_project.uielementspagetests.PositiveLoginTest -->
     </test> <!-- positivelogInTest -->
   </suite> <!-- PositiveLogInTestSuite -->

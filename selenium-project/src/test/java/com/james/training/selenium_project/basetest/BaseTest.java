@@ -1,6 +1,7 @@
 package com.james.training.selenium_project.basetest;
 
 import java.lang.reflect.Method;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,7 +10,6 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 /*
@@ -30,7 +30,7 @@ public class BaseTest {
 
 	@Parameters({ "browser" })
 	@BeforeMethod(alwaysRun = true)
-	public void setUp(Method method, @Optional("chrome") String browser, ITestContext ctx) {
+	public void setUp(Method method, @Optional("firefox") String browser, ITestContext ctx) {
 		String testName = ctx.getCurrentXmlTest().getName();
 		log = LogManager.getLogger(testName);
 		
@@ -48,14 +48,16 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 		
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		this.testSuiteName = ctx.getSuite().getName();
 		this.testName = testName;
 		this.testMethodName = method.getName();
 	}
 
-	@AfterMethod(alwaysRun = true)
+	//@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		log.info("Close driver");
 		// Close browser
