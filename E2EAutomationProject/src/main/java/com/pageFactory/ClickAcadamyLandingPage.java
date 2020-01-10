@@ -54,7 +54,8 @@ public class ClickAcadamyLandingPage extends BasePage {
 	public void openPage() {
 		
 		log.info("Opening page: " + pageUrl);
-		openUrl(pageUrl);
+		getCurrentUrl();
+		//openUrl(pageUrl);
 		log.info("Page opened!");
 	}
 

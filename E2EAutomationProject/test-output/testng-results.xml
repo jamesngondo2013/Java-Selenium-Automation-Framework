@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-10T17:39:11Z" name="Suite" finished-at="2020-01-10T17:39:28Z" duration-ms="16829">
+  <suite started-at="2020-01-10T18:43:22Z" name="Suite" finished-at="2020-01-10T18:43:38Z" duration-ms="16063">
     <groups>
     </groups>
-    <test started-at="2020-01-10T17:39:11Z" name="loginTest" finished-at="2020-01-10T17:39:28Z" duration-ms="16829">
+    <test started-at="2020-01-10T18:43:22Z" name="loginTest" finished-at="2020-01-10T18:43:38Z" duration-ms="16063">
       <class name="com.paralleltest.SignInPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.paralleltest.SignInPageTest@313b2ea6]" started-at="2020-01-10T17:39:12Z" name="setUp" finished-at="2020-01-10T17:39:19Z" duration-ms="7594" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.paralleltest.SignInPageTest@313b2ea6]" started-at="2020-01-10T18:43:22Z" name="setUpSuite" finished-at="2020-01-10T18:43:22Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.paralleltest.SignInPageTest@313b2ea6]" started-at="2020-01-10T18:43:22Z" name="setUp" finished-at="2020-01-10T18:43:34Z" duration-ms="11698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,19 +20,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@11bd0f3b]]>
+                <![CDATA[org.testng.TestRunner@7ea9e1e2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ariba()[pri:0, instance:com.paralleltest.SignInPageTest@313b2ea6]" started-at="2020-01-10T17:39:19Z" name="ariba" finished-at="2020-01-10T17:39:28Z" duration-ms="9204" status="PASS">
+        <test-method signature="ariba()[pri:0, instance:com.paralleltest.SignInPageTest@313b2ea6]" started-at="2020-01-10T18:43:34Z" name="ariba" finished-at="2020-01-10T18:43:38Z" duration-ms="4340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ariba -->
