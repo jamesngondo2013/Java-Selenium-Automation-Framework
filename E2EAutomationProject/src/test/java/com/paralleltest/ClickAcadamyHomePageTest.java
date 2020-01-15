@@ -4,9 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.pageFactory.ClickAcadamyLandingPage;
+import com.paralleltest.basetest.BaseTest;
 import com.paralleltest.basetest.TestUtilities;
 
-public class ClickAcadamyHomePageTest extends TestUtilities{
+public class ClickAcadamyHomePageTest extends BaseTest{
 
 	@Test
 	public void homePageTest() {

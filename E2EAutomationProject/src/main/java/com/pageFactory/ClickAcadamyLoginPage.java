@@ -29,9 +29,10 @@ public class ClickAcadamyLoginPage extends BasePage{
 		enter(pass, passwordLocator);	
 	}
 
-	public void clickLogin() {
+	public ClickAcadamyDashboard clickLogin() {
 		click(loginBtnLocator);
 		sleep(15);
+		return new ClickAcadamyDashboard(driver, log);
 	}
 
 	public ITProjectRequestPage createITProjectRequest() {

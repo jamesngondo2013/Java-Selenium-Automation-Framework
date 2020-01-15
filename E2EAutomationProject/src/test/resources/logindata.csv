@@ -1,6 +1,3 @@
-﻿Password,Username
-jek1,pw1
-jek2,pw2
-jek3,pw3
-jek4,pw4
-jaames,pwd5
+﻿id,username,password
+1,resticteduser@gmail.com,123456
+2,unresticteduser@gmail.com,123456

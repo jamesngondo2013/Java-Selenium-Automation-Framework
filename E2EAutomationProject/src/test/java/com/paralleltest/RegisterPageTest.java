@@ -2,7 +2,7 @@ package com.paralleltest;
 
 import org.testng.annotations.Test;
 
-import com.datasource.db.CommonDataProvider;
+import com.datasource.db.DBDataProvider;
 import com.pageFactory.ClickAcadamyLandingPage;
 import com.pageFactory.ClickAcadamyRegisterPage;
 import com.paralleltest.basetest.BaseTest;
@@ -12,7 +12,7 @@ public class RegisterPageTest extends BaseTest{
     ClickAcadamyLandingPage landing;
     ClickAcadamyRegisterPage reg;
 
-    @Test(dataProvider = "getData", dataProviderClass = CommonDataProvider.class)
+    @Test(dataProvider = "getData", dataProviderClass = DBDataProvider.class)
     public void registerUsingPageFactory (String username, String password)
     {
         // logger.info("registerUsingPageFactory");
@@ -21,7 +21,7 @@ public class RegisterPageTest extends BaseTest{
        
     }
  
-    @Test(dataProvider = "getDataExcel", dataProviderClass = CommonDataProvider.class)
+    @Test(dataProvider = "getDataExcel", dataProviderClass = DBDataProvider.class)
     public void registerUsingPageFactoryExcelData (String username, String password)
     {
         // logger.info("registerUsingPageFactory");

@@ -1,4 +1,4 @@
-package com.paralleltest.basetest;
+package com.paralleltest.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -39,6 +39,16 @@ public class ConfigDataProvider {
 	public String getStagingURL() {
 		
 		return prop.getProperty("pageUrl");
+	}
+	
+	public String getExcelPathName() {
+		
+		return prop.getProperty("excelPath");
+	}
+	
+	public String getExcelSheetName() {
+		
+		return prop.getProperty("excelSheetName");
 	}
 
 }

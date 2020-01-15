@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="methods" data-provider-thread-count="3" thread-count="2" verbose="4">
- <listeners>
-	<!-- <listener class-name="AutomationAcadamy.Listener"/> --><!-- generate screenshots -->
-	<!-- <listener class-name="reports.ExtentReporterNG"/> --><!-- generate reports -->
-</listeners> 
+<suite name="Suite" data-provider-thread-count="4" parallel="methods" thread-count="3" verbose="5">
+ 	<listeners>
+		<listener class-name="com.paralleltest.basetest.TestListener"/>
+	</listeners>
 
    <test name="loginTest">
     <classes>

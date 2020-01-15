@@ -74,6 +74,34 @@ public class BasePage
 		log.info("Clicked WebElement");
 	}
 	
+	protected boolean retryingFindClick(By by) {
+	    boolean result = false;
+	    int attempts = 0;
+	    while(attempts < 2) {
+	        try {
+	            driver.findElement(by).click();
+	            result = true;
+	            break;
+	        } catch(StaleElementReferenceException e) {
+	        }
+	        attempts++;
+	    }
+	    return result;
+	}
+	
+	protected void clickStallElement(By locator) {
+		
+		try {
+			waitForVisibilityOf(locator, 30);
+			findElement(locator).click();
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex)
+		{
+			waitForVisibilityOf(locator, 30);
+			findElement(locator).click();
+		}
+	}
+	
 	/** Click on element with given locator when its visible */
 	protected void click(WebElement locator) {
 		if(locator.isDisplayed()) {

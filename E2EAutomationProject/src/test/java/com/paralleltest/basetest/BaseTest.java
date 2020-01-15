@@ -7,23 +7,26 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class BaseTest {
+import com.paralleltest.utils.ConfigDataProvider;
+import com.paralleltest.utils.ExcelUtils;
 
-	public BaseTest() {
-		// TODO Auto-generated constructor stub
-	}
+public class BaseTest {
 	
 	protected WebDriver driver;
 	protected Logger log;
 	protected FirefoxProfile profile;
 	
 	public ConfigDataProvider config;
+	public ExcelUtils excelUtils;
 	
 	protected String testSuiteName;
 	protected String testName;
@@ -33,9 +36,9 @@ public class BaseTest {
 	public void setUpSuite() {
 		
 		config = new ConfigDataProvider();
+		excelUtils = new ExcelUtils(config.getExcelPathName(), config.getExcelSheetName());
 	}
 
-	
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(Method method, ITestContext ctx) {
 		String testName = ctx.getCurrentXmlTest().getName();
@@ -63,8 +66,13 @@ public class BaseTest {
 		this.testMethodName = method.getName();
 	}
 
-	//@AfterMethod(alwaysRun = false)
-	public void tearDown() {
+	@AfterMethod(alwaysRun = true)
+	public void tearDown(ITestResult result) {
+		
+		if(result.getStatus()==ITestResult.FAILURE) {
+			//capture screenshot
+		}
+		
 		log.info("Close driver");
 		// Close browser
 		driver.quit();

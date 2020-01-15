@@ -230,5 +230,11 @@ public class BasePage {
 		}
 
 	}
+	
+	protected void waitForPresenceOfElementLocated(By by) {
+	    WebDriverWait wait = new WebDriverWait(driver, 10);
+	    wait.until(ExpectedConditions.presenceOfElementLocated(by));
+	    driver.findElement(by);
+	}
 
 }
