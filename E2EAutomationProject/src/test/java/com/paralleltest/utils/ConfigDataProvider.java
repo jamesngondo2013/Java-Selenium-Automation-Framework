@@ -50,5 +50,21 @@ public class ConfigDataProvider {
 		
 		return prop.getProperty("excelSheetName");
 	}
+	
+	//========================================
+	public String getDBConnectionString() {
+		
+		return prop.getProperty("DB_URL");
+	}
+	
+	public String getDBUsername() {
+		
+		return prop.getProperty("DB_USER");
+	}
+	
+	public String getDBPassword() {
+		
+		return prop.getProperty("DB_PASS");
+	}
 
 }

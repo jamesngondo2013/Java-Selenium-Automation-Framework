@@ -9,6 +9,11 @@ public class DatabaseConnectionManager
 	private static DatabaseConnectionManager connectionManagerInstance;
 	private Connection conn;
 	
+	private String connectionString;
+	private String user;
+	private String pass;
+	
+	
 	public static DatabaseConnectionManager getConnectionManagerInstance() {
 		
 		if (connectionManagerInstance==null) {
@@ -18,10 +23,11 @@ public class DatabaseConnectionManager
 	}
 
 	public Connection connect() {
-	        
+	       System.out.println("Conn string in connect(): "+ getConnectionString());
+	       System.out.println("User in connect(): "+ getUser());
+	       System.out.println("Pass in connect(): "+ getPass());
 		 try {
-	            conn = (Connection)DriverManager.getConnection(
-	                "jdbc:mysql://localhost:3306/automation?useSSL=false&amp", "root", "chingotah9070");
+	            conn = (Connection)DriverManager.getConnection(getConnectionString(), getUser(), getPass());
 	            
 	            if (conn!=null) {
 	                System.out.println("successfully connected to database...");
@@ -40,4 +46,30 @@ public class DatabaseConnectionManager
 		conn.close();
 		System.out.println("Disconnected from database...");
 	}
+
+	public String getConnectionString() {
+		return connectionString;
+	}
+
+	public String getUser() {
+		return user;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+	
+	public void setConnectionString(String connectionString) {
+		this.connectionString = connectionString;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+	
+	
 }

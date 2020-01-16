@@ -4,7 +4,6 @@ import java.util.Map;
 
 import org.testng.annotations.Test;
 
-import com.datasource.db.DBDataProvider;
 import com.pageFactory.ClickAcadamyDashboard;
 import com.pageFactory.ClickAcadamyLandingPage;
 import com.pageFactory.ClickAcadamyLoginPage;
@@ -13,6 +12,7 @@ import com.pageFactory.ITProjectRequestPage;
 import com.paralleltest.basetest.BaseTest;
 import com.paralleltest.basetest.TestUtilities;
 import com.paralleltest.utils.CsvDataProvider;
+import com.paralleltest.utils.DBDataProvider;
 import com.paralleltest.utils.ExcelDataProvider;
 
 import freemarker.template.utility.CaptureOutput;
@@ -104,6 +104,7 @@ public class SignInPageTest extends TestUtilities {
 
 			log.info("Starting positiveLogInTest #  for " + username);
 
+			/*
 			ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(driver, log);
 			home.openPage();
 
@@ -130,6 +131,7 @@ public class SignInPageTest extends TestUtilities {
 
 			ClickAcadamyDashboard dashboard = loginPage.clickLogin();
 			dashboard.clickLogout();
+			*/
 
 		}
 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.datasource.db;
+package com.paralleltest.utils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -9,6 +9,8 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import org.testng.annotations.DataProvider;
+
+import com.datasource.db.DatabaseConnectionManager;
 
 
 /**

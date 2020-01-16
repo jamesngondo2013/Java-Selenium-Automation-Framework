@@ -2,10 +2,10 @@ package com.paralleltest;
 
 import org.testng.annotations.Test;
 
-import com.datasource.db.DBDataProvider;
 import com.pageFactory.ClickAcadamyLandingPage;
 import com.pageFactory.ClickAcadamyRegisterPage;
 import com.paralleltest.basetest.BaseTest;
+import com.paralleltest.utils.DBDataProvider;
 
 public class RegisterPageTest extends BaseTest{
 

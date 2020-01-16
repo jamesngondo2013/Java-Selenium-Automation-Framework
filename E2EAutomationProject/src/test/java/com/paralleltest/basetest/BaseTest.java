@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.datasource.db.DatabaseConnectionManager;
 import com.paralleltest.utils.ConfigDataProvider;
 import com.paralleltest.utils.ExcelUtils;
 
@@ -27,6 +28,7 @@ public class BaseTest {
 	
 	public ConfigDataProvider config;
 	public ExcelUtils excelUtils;
+	public DatabaseConnectionManager connectionManager;
 	
 	protected String testSuiteName;
 	protected String testName;
@@ -37,6 +39,13 @@ public class BaseTest {
 		
 		config = new ConfigDataProvider();
 		excelUtils = new ExcelUtils(config.getExcelPathName(), config.getExcelSheetName());
+		
+		//DB connection
+		connectionManager = DatabaseConnectionManager.getConnectionManagerInstance();
+		
+		connectionManager.setConnectionString(config.getDBConnectionString());
+		connectionManager.setUser(config.getDBUsername());
+		connectionManager.setPass(config.getDBPassword());
 	}
 
 	@BeforeMethod(alwaysRun = true)

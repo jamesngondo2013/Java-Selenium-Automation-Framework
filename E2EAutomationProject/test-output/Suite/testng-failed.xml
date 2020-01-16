@@ -10,8 +10,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginTestExcelData" invocation-numbers="1"/>
           <include name="setUpSuite"/>
+          <include name="loginTestDBData"/>
         </methods>
       </class> <!-- com.paralleltest.SignInPageTest -->
     </classes>
