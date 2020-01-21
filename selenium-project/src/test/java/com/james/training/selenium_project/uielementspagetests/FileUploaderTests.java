@@ -14,7 +14,7 @@ public class FileUploaderTests extends TestUtilities{
 		log.info("Starting fileUp loader Test #:"+ no + " for "+ fileName);
 		
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 	
 		// open fileUploader

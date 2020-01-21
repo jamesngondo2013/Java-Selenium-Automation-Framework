@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" data-provider-thread-count="4" parallel="methods" thread-count="3" verbose="5">
+<suite name="Suite" data-provider-thread-count = "2" thread-count="2" verbose="1" parallel="tests">
+ 	
  	<listeners>
 		<listener class-name="com.paralleltest.basetest.TestListener"/>
 	</listeners>
@@ -10,34 +11,5 @@
       <class name="com.paralleltest.SignInPageTest"/>  
     </classes>
   </test> 
-  <!--  <test name="RegisterTest">
-    <classes>
-      <class name="com.paralleltest.RegisterPageTest"/>  
-    </classes>
-  </test>  -->
-  
- <!--  <test name="homePageTest">
-    <classes>
-      <class name="com.paralleltest.ClickAcadamyHomePageTest"/>  
-    </classes>
-  </test>  -->
-  
-  
-  
-  
-  <!--  <test name="Test">
-    <classes>
-      <class name="AutomationAcadamy.HomePageDatabaseTest"/> 
-    </classes>
-  </test>  --> 
- <!--  <test name="Assertions">
-     <classes>
-      <class name="AutomationAcadamy.NavBarAndTitleAssertionTest"/>
-     </classes>
-  </test>
-   <test name="basePageNavigationDBData">
-    <classes>
-      <class name="AutomationAcadamy.HomePageDatabaseTest"/> 
-    </classes>
-  </test>  -->
-</suite> <!-- Suite -->
+
+</suite> 

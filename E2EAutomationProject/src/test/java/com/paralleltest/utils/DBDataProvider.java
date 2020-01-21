@@ -23,9 +23,7 @@ public class DBDataProvider {
 	private static String[][] inputArr;
 
 	public static void main(String[] args) {
-		//getDatabaseData();
-		
-		// databaseTestData();
+	
 	}
 
 	public Object[][] getDatabaseData() {
@@ -52,9 +50,6 @@ public class DBDataProvider {
 				// Iterating the data in the Table
 	
 				while (rs.next()) {
-					//String id = rs.getString("username");
-					//String username = rs.getString("username");
-					//String password = rs.getString("password");
 	
 					for (int j = 0; j < cols; j++) {
 						inputArr[i][j] = rs.getString(j + 1);
@@ -76,7 +71,7 @@ public class DBDataProvider {
 
 	}
 	
-	@DataProvider(name = "databaseTestData")
+	@DataProvider(name = "databaseTestData", parallel=true)
 	public Object[][] databaseTestData()
 	{
 		Object[][] data= getDatabaseData();
@@ -93,5 +88,16 @@ public class DBDataProvider {
 		
 		return data;
 	}
+	
+	 @DataProvider(name="SearchProvider", parallel=true)
+	    public Object[][] getDataFromDataprovider(){
+	    return new Object[][] 
+	    	{
+	            { "unresticteduser@gmail.com", "123456" },
+	            { "resticteduser@gmail.com", "123456" }
+	        };
+
+	    }
+
 
 }

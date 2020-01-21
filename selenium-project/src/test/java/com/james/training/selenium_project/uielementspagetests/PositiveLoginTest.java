@@ -6,8 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.james.training.selenium_project.basetest.CsvDataProviders;
+import com.james.training.selenium_project.basetest.DBDataProvider;
 import com.james.training.selenium_project.basetest.TestUtilities;
-import com.james.training.selenium_project.basetest.db.DBDataProvider;
 import com.james.training.selenium_project.pages.LoginPage;
 import com.james.training.selenium_project.pages.SecureAreaPage;
 import com.james.training.selenium_project.pages.WelcomePage;
@@ -17,7 +17,7 @@ import com.james.training.selenium_project.pages.WelcomePage;
  */
 public class PositiveLoginTest extends TestUtilities {
 	
-	@Test(dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
+	//@Test(dataProvider="csvPositiveTestReader", dataProviderClass = CsvDataProviders.class)
 	public void positivelogInTest(Map<String, String> testData) {
 		
 		// System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
@@ -31,7 +31,7 @@ public class PositiveLoginTest extends TestUtilities {
 		log.info("Starting positiveLogInTest #" + no + " for "+ username);
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		//takeScreenshot("Welcome page opened - by "+ username);
 
@@ -58,7 +58,7 @@ public class PositiveLoginTest extends TestUtilities {
 						+ expectedSuccessMessage + "\nactualSuccessMessage: " + actualSuccessMessage);
 	}
 	
-	//@Test(dataProvider="getData", dataProviderClass = DBDataProvider.class)
+	@Test(dataProvider="databaseTestData", dataProviderClass = DBDataProvider.class)
 	public void positivelogInDBTest(String username, String password) {
 		
 		// System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");	 
@@ -66,7 +66,7 @@ public class PositiveLoginTest extends TestUtilities {
 		log.info("Starting positiveLogInTest for "+ username);
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		//takeScreenshot("Welcome page opened - by "+ username);
 
@@ -96,7 +96,7 @@ public class PositiveLoginTest extends TestUtilities {
 	//@Test
 	public void test2()
 	{
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// Click on Form Authentication link

@@ -14,7 +14,7 @@ public class DragAndDropTests extends TestUtilities {
 		log.info("Starting dragAtoBTest");
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		
 		DragAndDropPage dragAndDropPage = welcomePage.clickDragAndDropPageLink();
@@ -35,7 +35,7 @@ public class DragAndDropTests extends TestUtilities {
 		log.info("Starting dragBtoATest");
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		
 		DragAndDropPage dragAndDropPage = welcomePage.clickDragAndDropPageLink();

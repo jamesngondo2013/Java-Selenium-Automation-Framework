@@ -20,7 +20,7 @@ public class AlertsSoftAssertsTests extends TestUtilities{
 		SoftAssert softAssert = new SoftAssert();
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// Click on JavaScript Alerts link
@@ -56,7 +56,7 @@ public class AlertsSoftAssertsTests extends TestUtilities{
 
 		SoftAssert softAssert = new SoftAssert();
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// Click on JavaScript Alerts link
@@ -90,7 +90,7 @@ public class AlertsSoftAssertsTests extends TestUtilities{
 	public void jsPromptTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// Click on JavaScript Alerts link

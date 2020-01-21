@@ -32,7 +32,7 @@ public class SignInPageTest extends TestUtilities {
 
 		log.info("Starting positiveLogInTest #" + id + " for " + username);
 
-		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(driver, log);
+		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(getDriver(), log);
 		home.openPage();
 
 		// assert page url
@@ -48,7 +48,7 @@ public class SignInPageTest extends TestUtilities {
 		home.closeNewsLetterPopup();
 
 		// click login
-		ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(driver, log);
+		ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(getDriver(), log);
 		loginPage = home.clickLoginBtn();
 
 		// loginPage.enterEmailAddress("unresticteduser@gmail.com");
@@ -68,7 +68,7 @@ public class SignInPageTest extends TestUtilities {
 
 		log.info("Starting positiveLogInTest #  for " + username);
 
-		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(driver, log);
+		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(getDriver(), log);
 		home.openPage();
 
 		// assert page url
@@ -84,7 +84,7 @@ public class SignInPageTest extends TestUtilities {
 		home.closeNewsLetterPopup();
 
 		// click login
-		ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(driver, log);
+		ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(getDriver(), log);
 		loginPage = home.clickLoginBtn();
 
 		// loginPage.enterEmailAddress("unresticteduser@gmail.com");
@@ -104,8 +104,8 @@ public class SignInPageTest extends TestUtilities {
 
 			log.info("Starting positiveLogInTest #  for " + username);
 
-			/*
-			ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(driver, log);
+			
+			ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(getDriver(), log);
 			home.openPage();
 
 			// assert page url
@@ -121,7 +121,7 @@ public class SignInPageTest extends TestUtilities {
 			home.closeNewsLetterPopup();
 
 			// click login
-			ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(driver, log);
+			ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(getDriver(), log);
 			loginPage = home.clickLoginBtn();
 
 			// loginPage.enterEmailAddress("unresticteduser@gmail.com");
@@ -131,9 +131,35 @@ public class SignInPageTest extends TestUtilities {
 
 			ClickAcadamyDashboard dashboard = loginPage.clickLogin();
 			dashboard.clickLogout();
-			*/
+			
 
 		}
+	
+	//@Test(dataProvider = "SearchProvider", dataProviderClass = DBDataProvider.class)
+	public void loginTest(String username, String password) {
+
+		System.err.println("Running Test=> " + this + " -> on thread [" + Thread.currentThread().getId() + "]");
+
+		log.info("Starting LogInTest #  for " + username);
+
+		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(getDriver(), log);
+		home.openPage();
+
+		home.closeNewsLetterPopup();
+
+		// click login
+		ClickAcadamyLoginPage loginPage = new ClickAcadamyLoginPage(getDriver(), log);
+		loginPage = home.clickLoginBtn();
+
+		loginPage.enterEmailAddress(username);
+
+		loginPage.enterPassword(password);
+
+		ClickAcadamyDashboard dashboard = loginPage.clickLogin();
+		dashboard.clickLogout();
+		
+	}
+
 
 
 	// @Test(dataProvider="csvTestReader", dataProviderClass =  csvDataProvider.class)
@@ -146,7 +172,7 @@ public class SignInPageTest extends TestUtilities {
 
 		log.info("Starting positiveLogInTest #" + id + " for " + username);
 
-		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(driver, log);
+		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(getDriver(), log);
 		home.openPage();
 
 		home.enterUsername(username);

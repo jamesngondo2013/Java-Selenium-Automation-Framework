@@ -13,7 +13,7 @@ public class AlertsTests extends TestUtilities{
 	public void jsAlertTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		//takeScreenshot("open main page");
 
@@ -48,7 +48,7 @@ public class AlertsTests extends TestUtilities{
 	public void jsDismissTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		takeScreenshot("open main page");
 
@@ -82,7 +82,7 @@ public class AlertsTests extends TestUtilities{
 	public void jsPromptTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		takeScreenshot("open main page");
 

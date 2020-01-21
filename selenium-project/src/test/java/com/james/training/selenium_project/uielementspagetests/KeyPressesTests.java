@@ -15,7 +15,7 @@ public class KeyPressesTests extends TestUtilities{
 		
 		
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// open KeyPressesPage
@@ -36,7 +36,7 @@ public class KeyPressesTests extends TestUtilities{
 	public void pressKeyWithActionsTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// open KeyPressesPage

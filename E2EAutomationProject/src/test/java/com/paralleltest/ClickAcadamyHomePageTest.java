@@ -12,7 +12,7 @@ public class ClickAcadamyHomePageTest extends BaseTest{
 	@Test
 	public void homePageTest() {
 		
-		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(driver, log);
+		ClickAcadamyLandingPage home = new ClickAcadamyLandingPage(getDriver(), log);
 		home.openPage();
 		
 		//assert page url

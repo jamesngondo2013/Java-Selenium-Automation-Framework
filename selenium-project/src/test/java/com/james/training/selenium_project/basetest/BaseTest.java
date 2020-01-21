@@ -8,9 +8,9 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 /*
@@ -21,13 +21,19 @@ import org.testng.annotations.Parameters;
 //@Listeners({com.james.training.selenium_project.basetest.TestListener.class})
 public class BaseTest {
 
-	protected WebDriver driver;
+	private static final ThreadLocal<WebDriver> drivers = new ThreadLocal<WebDriver>();
 	protected Logger log;
 	protected FirefoxProfile profile;
 	
 	protected String testSuiteName;
 	protected String testName;
 	protected String testMethodName;
+	
+	protected String url = "http://the-internet.herokuapp.com/";
+	
+	public WebDriver getDriver() {
+		return drivers.get();
+	}
 
 	@Parameters({ "browser" })
 	@BeforeMethod(alwaysRun = true)
@@ -35,8 +41,9 @@ public class BaseTest {
 		String testName = ctx.getCurrentXmlTest().getName();
 		log = LogManager.getLogger(testName);
 		
-		BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-		driver = factory.createDriver();
+		WebDriver driver = BrowserDriverFactory.createDriver(browser, log);
+		drivers.set(driver);
+		driver.get(url);
 		
 		profile=new FirefoxProfile();
 		// Set preferences for file type 
@@ -58,11 +65,10 @@ public class BaseTest {
 		this.testMethodName = method.getName();
 	}
 
-	//@AfterMethod(alwaysRun = true)
-	public void tearDown() {
-		log.info("Close driver");
-		// Close browser
-		driver.quit();
-	}
+	 @AfterMethod(alwaysRun = true)
+	  public void tearDown(ITestResult result) {
+	    getDriver().quit();
+	    drivers.remove();
+	  }
 
 }

@@ -15,10 +15,7 @@ public class ClickAcadamyLandingPage extends BasePage {
 	private String pageUrl0 = "https://s1.ariba.com/Sourcing/Main/aw?awh=r&awssk=KkQ74sDa&realm=cirrusatlanticsuite&dard=1#b0";
 	private String pageUrl3 = "https://rahulshettyacademy.com/index";
 	private String pageUrl = "http://www.qaclickacademy.com/";
-	private String pageUrl2 = "https://sso.teachable.com/secure/9521/users/sign_in?clean_login=true&reset_purchase_session=1";
-	
-	public WebDriver driver;
-	
+	private String pageUrl2 = "https://sso.teachable.com/secure/9521/users/sign_in?clean_login=true&reset_purchase_session=1";	
 
 	public ClickAcadamyLandingPage(WebDriver driver, Logger log) {
 		super(driver, log);

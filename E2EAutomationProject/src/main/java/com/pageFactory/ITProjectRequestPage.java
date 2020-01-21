@@ -11,7 +11,6 @@ import org.openqa.selenium.WebElement;
 
 public class ITProjectRequestPage extends ClickAcadamyLoginPage{
 
-	private WebDriver driver;
 	private By inputs = By.xpath("//input[contains(@ng-reflect-klass,'form-control af-input')]");
 	
 	public ITProjectRequestPage(WebDriver driver, Logger log) {

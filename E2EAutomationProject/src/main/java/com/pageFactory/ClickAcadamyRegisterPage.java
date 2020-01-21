@@ -13,7 +13,7 @@ public class ClickAcadamyRegisterPage extends ClickAcadamyLandingPage{
     public ClickAcadamyRegisterPage (WebDriver driver, Logger log)
     {
         super(driver, log);
-        // TODO Auto-generated constructor stub
+        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
     

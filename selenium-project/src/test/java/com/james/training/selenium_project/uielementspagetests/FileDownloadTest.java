@@ -13,7 +13,7 @@ public class FileDownloadTest extends TestUtilities{
 	public void fileDownoladTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		
 		FileDownloadPage downloadPage = welcomePage.clickFileDownloadPage();

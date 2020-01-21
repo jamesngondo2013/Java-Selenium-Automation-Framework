@@ -5,8 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ClickAcadamyLoginPage extends BasePage{
-
-	private WebDriver driver;
 	
 	public ClickAcadamyLoginPage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -26,7 +24,8 @@ public class ClickAcadamyLoginPage extends BasePage{
 	}
 
 	public void enterPassword(String pass) {
-		enter(pass, passwordLocator);	
+		enter(pass, passwordLocator);
+		sleep(5);
 	}
 
 	public ClickAcadamyDashboard clickLogin() {

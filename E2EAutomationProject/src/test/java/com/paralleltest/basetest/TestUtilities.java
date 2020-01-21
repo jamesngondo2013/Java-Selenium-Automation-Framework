@@ -17,7 +17,7 @@ public class TestUtilities extends BaseTest {
 	
 	/** Take screenshot */
 	protected void takeScreenshot(String fileName) {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir") 
 				+ File.separator + "test-output" 
 				+ File.separator + "screenshots"
@@ -46,7 +46,7 @@ public class TestUtilities extends BaseTest {
 
 	/** Get logs from browser console */
 	protected List<LogEntry> getBrowserLogs() {
-		LogEntries log = driver.manage().logs().get("browser");
+		LogEntries log = getDriver().manage().logs().get("browser");
 		List<LogEntry> logList = log.getAll();
 		return logList;
 	}

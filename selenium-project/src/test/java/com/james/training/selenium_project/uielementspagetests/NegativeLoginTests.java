@@ -26,7 +26,7 @@ public class NegativeLoginTests extends TestUtilities {
 		log.info("Starting negativeLogInTest #" + no + " for "+ description);
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// Click on Form Authentication link

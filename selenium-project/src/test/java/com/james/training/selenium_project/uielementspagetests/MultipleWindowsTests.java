@@ -14,7 +14,7 @@ public class MultipleWindowsTests extends TestUtilities{
 	public void newWindowTest() {
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		// Click on MultipleWindows link

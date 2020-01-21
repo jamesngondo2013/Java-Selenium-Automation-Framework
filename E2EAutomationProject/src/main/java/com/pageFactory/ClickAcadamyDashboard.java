@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 
 public class ClickAcadamyDashboard extends BasePage{
 
-	public WebDriver driver;
-	private By dropdown = By.xpath("//*[@class='fedora-navbar-link navbar-link dropdown-toggle open-my-profile-dropdown']");
+	private By dropdown = By.xpath("//*[contains(@class,'open-my-profile-dropdown')]");
 	private By logout = By.xpath("//*[@class='user-signout']");
+	private By logOutLinkBtn = By.cssSelector("a[href='/sign_out']");
 
 	public ClickAcadamyDashboard(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -18,8 +18,8 @@ public class ClickAcadamyDashboard extends BasePage{
 	public void clickLogout() {
 		// TODO Auto-generated method stub
 		click(dropdown);
-		sleep(2);
-		click(logout);
+		sleep(5);
+		click(logOutLinkBtn);
 	}
 	
 	

@@ -34,12 +34,14 @@ public class BasePage
 { 
 
 	protected WebDriver driver;
+	public WebDriverWait wait;
 	protected Logger log;
 	protected String _logTag;
 
 	public BasePage(WebDriver driver, Logger log) {
 		this.driver = driver;
 		this.log = log;
+		wait = new WebDriverWait(driver, 5);
 	}
 	
 	// STATIC SLEEP 

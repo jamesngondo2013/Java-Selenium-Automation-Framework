@@ -14,7 +14,7 @@ public class HoverOverTests extends TestUtilities {
 	public void user2ProfileHoverOverTest() {
 
 		// Open HoversPage
-		WelcomePage welcome = new WelcomePage(driver, log);
+		WelcomePage welcome = new WelcomePage(getDriver(), log);
 		welcome.openPage();
 
 		// Open User 2 profile

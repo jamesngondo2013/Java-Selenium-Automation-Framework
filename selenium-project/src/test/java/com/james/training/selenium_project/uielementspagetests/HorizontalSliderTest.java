@@ -13,7 +13,7 @@ public class HorizontalSliderTest extends TestUtilities{
 	public void sliderTest() {
 
 		// Open WelcomePage
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 
 		//open horizontal slider page

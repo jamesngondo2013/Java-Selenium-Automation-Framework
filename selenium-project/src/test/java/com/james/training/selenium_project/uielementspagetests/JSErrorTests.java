@@ -19,7 +19,7 @@ public class JSErrorTests extends TestUtilities{
 		SoftAssert softAssert = new SoftAssert();
 
 		// Open Welcome page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		
 		JSErrorPage jsErrorPage = welcomePage.clickJavaScriptOnloadEventErrorPage();

@@ -1,11 +1,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="PositiveLogInTestSuite" data-provider-thread-count="20" parallel="instances" thread-count="3">
+<suite name="PositiveLogInTestSuite" data-provider-thread-count="5" parallel="tests" thread-count="3">
 	<listeners>
 		<listener class-name="com.james.training.selenium_project.basetest.TestListener"/>
 	</listeners>
 	
-	<test name="positivelogInTest">
+	<test name="positivelogInTest Chrome">
+	 <parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest" />
+		</classes>
+		
+	</test>
+	
+	<test name="positivelogInTest firefox">
+	 <parameter name="browser" value="firefox"/>
 		<classes>
 			<class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest" />
 		</classes>

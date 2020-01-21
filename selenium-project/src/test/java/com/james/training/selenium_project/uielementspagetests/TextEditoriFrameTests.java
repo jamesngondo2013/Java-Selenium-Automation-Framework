@@ -14,7 +14,7 @@ public class TextEditoriFrameTests extends TestUtilities{
 		log.info("Text Editor iFrame Test");
 
 		// open main page
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+		WelcomePage welcomePage = new WelcomePage(getDriver(), log);
 		welcomePage.openPage();
 		
 		//scroll to bottom of page
