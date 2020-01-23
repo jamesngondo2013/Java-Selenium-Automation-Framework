@@ -37,7 +37,7 @@ public class BaseTest {
 
 	@Parameters({ "browser" })
 	@BeforeMethod(alwaysRun = true)
-	public void setUp(Method method, @Optional("firefox") String browser, ITestContext ctx) {
+	public void setUp(Method method, @Optional String browser, ITestContext ctx) {
 		String testName = ctx.getCurrentXmlTest().getName();
 		log = LogManager.getLogger(testName);
 		

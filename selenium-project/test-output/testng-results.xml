@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-21T17:49:52Z" name="PositiveLogInTestSuite" finished-at="2020-01-21T17:50:46Z" duration-ms="54482">
+  <suite started-at="2020-01-23T10:15:12Z" name="PositiveLogInTestSuite" finished-at="2020-01-23T10:16:05Z" duration-ms="53735">
     <groups>
     </groups>
-    <test started-at="2020-01-21T17:49:52Z" name="positivelogInTest Chrome" finished-at="2020-01-21T17:50:15Z" duration-ms="23510">
+    <test started-at="2020-01-23T10:15:12Z" name="positivelogInTest Chrome" finished-at="2020-01-23T10:15:37Z" duration-ms="24898">
       <class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:49:52Z" name="setUp" finished-at="2020-01-21T17:50:06Z" duration-ms="13097" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:13Z" name="setUp" finished-at="2020-01-23T10:15:25Z" duration-ms="12486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:49:52Z" name="setUp" finished-at="2020-01-21T17:50:05Z" duration-ms="12200" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:13Z" name="setUp" finished-at="2020-01-23T10:15:23Z" duration-ms="10593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:49:52Z" name="setUp" finished-at="2020-01-21T17:50:06Z" duration-ms="13427" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:13Z" name="setUp" finished-at="2020-01-23T10:15:25Z" duration-ms="12795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:49:52Z" name="setUp" finished-at="2020-01-21T17:50:06Z" duration-ms="13599" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:13Z" name="setUp" finished-at="2020-01-23T10:15:24Z" duration-ms="11551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:49:52Z" name="setUp" finished-at="2020-01-21T17:50:04Z" duration-ms="11379" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:13Z" name="setUp" finished-at="2020-01-23T10:15:26Z" duration-ms="12838" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:04Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:08Z" duration-ms="4250" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:23Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:28Z" duration-ms="4754" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:05Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:10Z" duration-ms="5401" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:24Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:29Z" duration-ms="4689" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,7 +144,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:06Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:11Z" duration-ms="5076" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:25Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:31Z" duration-ms="5539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,7 +160,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:06Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:10Z" duration-ms="4088" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:25Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:30Z" duration-ms="4831" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:06Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:11Z" duration-ms="4547" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:26Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:30Z" duration-ms="4797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,7 +192,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:08Z" name="tearDown" finished-at="2020-01-21T17:50:14Z" duration-ms="5805" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:28Z" name="tearDown" finished-at="2020-01-23T10:15:37Z" duration-ms="8464" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -203,7 +203,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:10Z" name="tearDown" finished-at="2020-01-21T17:50:15Z" duration-ms="5257" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:29Z" name="tearDown" finished-at="2020-01-23T10:15:36Z" duration-ms="7482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,7 +214,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:10Z" name="tearDown" finished-at="2020-01-21T17:50:15Z" duration-ms="4830" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:30Z" name="tearDown" finished-at="2020-01-23T10:15:36Z" duration-ms="5628" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,7 +225,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:11Z" name="tearDown" finished-at="2020-01-21T17:50:15Z" duration-ms="4761" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:30Z" name="tearDown" finished-at="2020-01-23T10:15:37Z" duration-ms="6269" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,7 +236,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-21T17:50:11Z" name="tearDown" finished-at="2020-01-21T17:50:15Z" duration-ms="4694" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@623a8092]" started-at="2020-01-23T10:15:31Z" name="tearDown" finished-at="2020-01-23T10:15:36Z" duration-ms="5395" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,9 +249,9 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.james.training.selenium_project.uielementspagetests.PositiveLoginTest -->
     </test> <!-- positivelogInTest Chrome -->
-    <test started-at="2020-01-21T17:50:15Z" name="positivelogInTest firefox" finished-at="2020-01-21T17:50:46Z" duration-ms="30937">
+    <test started-at="2020-01-23T10:15:37Z" name="positivelogInTest firefox" finished-at="2020-01-23T10:16:05Z" duration-ms="28794">
       <class name="com.james.training.selenium_project.uielementspagetests.PositiveLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:15Z" name="setUp" finished-at="2020-01-21T17:50:33Z" duration-ms="17634" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:37Z" name="setUp" finished-at="2020-01-23T10:15:51Z" duration-ms="14708" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,7 +272,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:15Z" name="setUp" finished-at="2020-01-21T17:50:33Z" duration-ms="17647" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:37Z" name="setUp" finished-at="2020-01-23T10:15:52Z" duration-ms="15608" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,7 +293,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:15Z" name="setUp" finished-at="2020-01-21T17:50:32Z" duration-ms="17021" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:37Z" name="setUp" finished-at="2020-01-23T10:15:53Z" duration-ms="16056" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -314,7 +314,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:15Z" name="setUp" finished-at="2020-01-21T17:50:33Z" duration-ms="17371" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:37Z" name="setUp" finished-at="2020-01-23T10:15:53Z" duration-ms="16015" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -335,7 +335,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:15Z" name="setUp" finished-at="2020-01-21T17:50:34Z" duration-ms="18171" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:37Z" name="setUp" finished-at="2020-01-23T10:15:52Z" duration-ms="15577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -356,7 +356,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:32Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:36Z" duration-ms="3799" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:51Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:55Z" duration-ms="3217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -372,7 +372,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:33Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:38Z" duration-ms="4763" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:52Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:56Z" duration-ms="3893" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,7 +388,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:33Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:38Z" duration-ms="4498" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:52Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:57Z" duration-ms="4745" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -404,7 +404,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:33Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:38Z" duration-ms="5175" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:53Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:56Z" duration-ms="3774" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -420,7 +420,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:34Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-21T17:50:38Z" duration-ms="4509" status="PASS">
+        <test-method signature="positivelogInDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:53Z" name="positivelogInDBTest" data-provider="databaseTestData" finished-at="2020-01-23T10:15:57Z" duration-ms="4216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -436,7 +436,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positivelogInDBTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:36Z" name="tearDown" finished-at="2020-01-21T17:50:45Z" duration-ms="9211" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:55Z" name="tearDown" finished-at="2020-01-23T10:16:05Z" duration-ms="10017" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -447,7 +447,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:38Z" name="tearDown" finished-at="2020-01-21T17:50:46Z" duration-ms="8658" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:56Z" name="tearDown" finished-at="2020-01-23T10:16:05Z" duration-ms="8446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -458,7 +458,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:38Z" name="tearDown" finished-at="2020-01-21T17:50:46Z" duration-ms="8434" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:56Z" name="tearDown" finished-at="2020-01-23T10:16:05Z" duration-ms="8597" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -469,7 +469,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:38Z" name="tearDown" finished-at="2020-01-21T17:50:46Z" duration-ms="8244" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:57Z" name="tearDown" finished-at="2020-01-23T10:16:05Z" duration-ms="8302" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -480,7 +480,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-21T17:50:38Z" name="tearDown" finished-at="2020-01-21T17:50:46Z" duration-ms="7598" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.james.training.selenium_project.uielementspagetests.PositiveLoginTest@3943a2be]" started-at="2020-01-23T10:15:57Z" name="tearDown" finished-at="2020-01-23T10:16:05Z" duration-ms="8427" status="PASS">
           <params>
             <param index="0">
               <value>
