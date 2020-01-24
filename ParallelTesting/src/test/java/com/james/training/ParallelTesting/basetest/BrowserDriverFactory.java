@@ -45,7 +45,7 @@ class BrowserDriverFactory {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-		return new ChromeDriver();
+		return new ChromeDriver(chromeOptions);
 	}
 
 }

@@ -6,16 +6,23 @@
       <class name="com.james.training.ParallelTesting.ParallelTest"/>
     </classes>
   </test> -->
-  <test name="login-ios">
+  <!-- <test name="login-ios">
   <parameter name="deviceName" value="iPhone X"/>
     <classes>
       <class name="com.james.training.ParallelTesting.ParallelTest"/>
     </classes>
-  </test>
+  </test> -->
   <test name="login-android">
     <parameter name="deviceName" value="Galaxy S5"/>
     <classes>
       <class name="com.james.training.ParallelTesting.ParallelTest"/>
     </classes>
   </test>
+  
+  <!--  <test name="login">
+    <parameter name="deviceName" value=""/>
+    <classes>
+      <class name="com.james.training.ParallelTesting.ParallelTest"/>
+    </classes>
+  </test> -->
 </suite>

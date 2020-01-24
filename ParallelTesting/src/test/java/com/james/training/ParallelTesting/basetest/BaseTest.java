@@ -43,11 +43,11 @@ public class BaseTest {
 			drivers.set(driver);
 			driver.get(pageUrl);
 		}
-		else {
-			driver = BrowserDriverFactory.createDriver("chrome", log);
-			drivers.set(driver);
-			driver.get(pageUrl);
-		}
+		//else {
+		//	driver = BrowserDriverFactory.createDriver("chrome", log);
+		//	drivers.set(driver);
+		//	driver.get(pageUrl);
+		//}
 		//drivers.set(driver);
 		//driver.get(pageUrl);
 		

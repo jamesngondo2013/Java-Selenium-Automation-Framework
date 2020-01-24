@@ -153,7 +153,7 @@ public class BasePage {
 	private void waitFor(ExpectedCondition<WebElement> condition, Integer timeOutInSeconds) {
 		timeOutInSeconds = timeOutInSeconds != null ? timeOutInSeconds : 30;
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
-		//wait.until(condition);
+		wait.until(condition);
 	}
 
 	/**
