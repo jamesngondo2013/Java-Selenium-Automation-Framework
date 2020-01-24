@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Parallel test suite]" guice-stage="DEVELOPMENT">
+  <test name="login-android(failed)">
+    <parameter name="deviceName" value="Pixel 2 XL"/>
+    <classes>
+      <class name="com.james.training.ParallelTesting.ParallelTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTestDBData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.james.training.ParallelTesting.ParallelTest -->
+    </classes>
+  </test> <!-- login-android(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->
