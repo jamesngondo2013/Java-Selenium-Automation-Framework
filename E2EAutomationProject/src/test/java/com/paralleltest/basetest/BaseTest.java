@@ -47,11 +47,15 @@ public class BaseTest {
 		excelUtils = new ExcelUtils(config.getExcelPathName(), config.getExcelSheetName());
 		
 		//DB connection
-		connectionManager = DatabaseConnectionManager.getConnectionManagerInstance();
 		
-		connectionManager.setConnectionString(config.getDBConnectionString());
-		connectionManager.setUser(config.getDBUsername());
-		connectionManager.setPass(config.getDBPassword());
+		DatabaseConnectionManager.getConnectionManagerInstance().setConnectionString(config.getDBConnectionString());
+		DatabaseConnectionManager.getConnectionManagerInstance().setUser(config.getDBUsername());
+		DatabaseConnectionManager.getConnectionManagerInstance().setPass(config.getDBPassword());
+		
+		//connectionManager = DatabaseConnectionManager.getConnectionManagerInstance();
+		//connectionManager.setConnectionString(config.getDBConnectionString());
+		//connectionManager.setUser(config.getDBUsername());
+		//connectionManager.setPass(config.getDBPassword());
 	}
 
 	@BeforeMethod()
