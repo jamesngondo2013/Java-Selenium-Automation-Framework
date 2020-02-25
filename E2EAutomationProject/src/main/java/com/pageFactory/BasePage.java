@@ -303,5 +303,43 @@ public class BasePage
 		}
 
 	}
+	
+	protected WebElement findFirstVisible (String awNameSubstring, String visibleText)
+    {
+        List<WebElement> webElements =
+            this.findElementsByAwnameSubstring(awNameSubstring);
+        for (WebElement e : webElements) {
+            if (e.isDisplayed() && e.getText().equals(visibleText)) {
+                return e;
+            }
+        }
+        return null;
+    }
+	
+	 protected List<WebElement> findElementsByAwnameSubstring (String awNameSubstring)
+	    {
+	        return findAllElements(By.xpath("//*[contains(@awname, '" + awNameSubstring
+	            + "')]"));
+	    }
+	
+	 /**
+     * Return a list with all the elements on the page that match the awname
+     * substring.
+     *
+     * @param awNameSubstring
+     * @param visibleText
+     * @return
+     * @author levan.voronin
+     */
+    protected List<WebElement> findElementsByAwnameSubstring (String awNameSubstring,
+        String visibleText)
+    {
+        // The | character between the xpaths is the logical or operator.
+        return findAllElements(By.xpath("//*[contains(@awname, '" + awNameSubstring + "') "
+            + "and normalize-space(text())='" + visibleText + "'] | "
+            + "//*[contains(@awname, '" + awNameSubstring + "')]"
+            + "//*[normalize-space(text())='" + visibleText + "']"));
+    }
+
   
 }

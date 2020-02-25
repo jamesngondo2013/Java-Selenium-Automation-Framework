@@ -14,23 +14,35 @@
         <filtering>true</filtering>
       </resource>
   	</resources>
-  <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.20.1</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>C:/Users/James/Desktop/E2EAutomationProject/suite/testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-  	</plugins>
   </build>
   <properties>
 		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
+		<profiles>
+	
+		<profile>
+			<id>regression</id>
+			<!-- allows to execute all test cases in a maven project -->
+			<build>
+				<pluginManagement>
+					<plugins>
+				      <plugin>
+				        <groupId>org.apache.maven.plugins</groupId>
+				        <artifactId>maven-surefire-plugin</artifactId>
+				        <version>2.20.1</version>
+				        <configuration>
+				          <suiteXmlFiles>
+				            <suiteXmlFile>C:/Users/i350380/Documents/GitHub/Java-Selenium-Automation-Framework/E2EAutomationProject/suite/testng.xml</suiteXmlFile>
+				          </suiteXmlFiles>
+				        </configuration>
+				      </plugin>
+				  	</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		
+	</profiles>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
